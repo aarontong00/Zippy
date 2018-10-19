@@ -1,14 +1,13 @@
 {
-    "name": "alchemy/zippy",
+    "name": "Aarontong00/zippy",
     "type": "library",
-    "description": "Zippy, the archive manager companion",
+    "description": "Zippy, the archive manager companion just for  php 5.6 fork",
     "keywords": ["zip", "tar", "bzip", "compression"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Alchemy",
-            "email": "dev.team@alchemy.fr",
-            "homepage": "http://www.alchemy.fr/"
+            "name": "aarontong00",
+            "email": "2845652696@qq.com"
         }
     ],
     "require": {
@@ -32,13 +31,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Alchemy\\Zippy\\": "src/"
+            "Aarontong00\\Zippy\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Alchemy\\Zippy\\Functional\\": "tests/Functional/",
-            "Alchemy\\Zippy\\Tests\\": "tests/Tests/"
+            "Aarontong00\\Zippy\\Functional\\": "tests/Functional/",
+            "Aarontong00\\Zippy\\Tests\\": "tests/Tests/"
         }
     },
     "extra": {
