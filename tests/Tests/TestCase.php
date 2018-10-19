@@ -1,12 +1,12 @@
 <?php
 
-namespace Alchemy\Zippy\Tests;
+namespace Aarontong00\Zippy\Tests;
 
-use Alchemy\Zippy\Adapter\AdapterInterface;
-use Alchemy\Zippy\Resource\PathUtil;
-use Alchemy\Zippy\Resource\ResourceCollection;
-use Alchemy\Zippy\Resource\Resource;
-use Alchemy\Zippy\Adapter\VersionProbe\VersionProbeInterface;
+use Aarontong00\Zippy\Adapter\AdapterInterface;
+use Aarontong00\Zippy\Resource\PathUtil;
+use Aarontong00\Zippy\Resource\ResourceCollection;
+use Aarontong00\Zippy\Resource\Resource;
+use Aarontong00\Zippy\Adapter\VersionProbe\VersionProbeInterface;
 
 abstract class TestCase extends \PHPUnit_Framework_TestCase
 {
@@ -30,7 +30,7 @@ abstract class TestCase extends \PHPUnit_Framework_TestCase
         $collection = new ResourceCollection($context, $elements, false);
 
         $manager = $this
-            ->getMockBuilder('\Alchemy\Zippy\Resource\ResourceManager')
+            ->getMockBuilder('\Aarontong00\Zippy\Resource\ResourceManager')
             ->disableOriginalConstructor()
             ->getMock();
 
@@ -43,7 +43,7 @@ abstract class TestCase extends \PHPUnit_Framework_TestCase
 
     protected function getResource($data = null)
     {
-        $resource = $this->getMockBuilder('\Alchemy\Zippy\Adapter\Resource\ResourceInterface')->getMock();
+        $resource = $this->getMockBuilder('\Aarontong00\Zippy\Adapter\Resource\ResourceInterface')->getMock();
 
         if (null !== $data) {
             $resource->expects($this->any())
@@ -60,7 +60,7 @@ abstract class TestCase extends \PHPUnit_Framework_TestCase
             $this->fail('Trying to set a probe on an adapter that does not support it');
         }
 
-        $probe = $this->getMockBuilder('\Alchemy\Zippy\Adapter\VersionProbe\VersionProbeInterface')->getMock();
+        $probe = $this->getMockBuilder('\Aarontong00\Zippy\Adapter\VersionProbe\VersionProbeInterface')->getMock();
         $probe->expects($this->any())
             ->method('getStatus')
             ->will($this->returnValue(VersionProbeInterface::PROBE_OK));
@@ -74,7 +74,7 @@ abstract class TestCase extends \PHPUnit_Framework_TestCase
             $this->fail('Trying to set a probe on an adapter that does not support it');
         }
 
-        $probe = $this->getMockBuilder('\Alchemy\Zippy\Adapter\VersionProbe\VersionProbeInterface')->getMock();
+        $probe = $this->getMockBuilder('\Aarontong00\Zippy\Adapter\VersionProbe\VersionProbeInterface')->getMock();
         $probe->expects($this->any())
             ->method('getStatus')
             ->will($this->returnValue(VersionProbeInterface::PROBE_NOTSUPPORTED));
@@ -85,7 +85,7 @@ abstract class TestCase extends \PHPUnit_Framework_TestCase
     protected function getMockedProcessBuilderFactory($mockedProcessBuilder, $creations = 1)
     {
         $mockedProcessBuilderFactory =
-            $this->getMockBuilder('\Alchemy\Zippy\ProcessBuilder\ProcessBuilderFactoryInterface')->getMock();
+            $this->getMockBuilder('\Aarontong00\Zippy\ProcessBuilder\ProcessBuilderFactoryInterface')->getMock();
 
         $mockedProcessBuilderFactory
             ->expects($this->exactly($creations))

@@ -1,10 +1,10 @@
 <?php
 
-namespace Alchemy\Zippy\Tests\Archive;
+namespace Aarontong00\Zippy\Tests\Archive;
 
-use Alchemy\Zippy\Tests\TestCase;
-use Alchemy\Zippy\Archive\ArchiveInterface;
-use Alchemy\Zippy\Archive\Archive;
+use Aarontong00\Zippy\Tests\TestCase;
+use Aarontong00\Zippy\Archive\ArchiveInterface;
+use Aarontong00\Zippy\Archive\Archive;
 
 class ArchiveTest extends TestCase
 {
@@ -84,6 +84,6 @@ class ArchiveTest extends TestCase
 
     private function getAdapterMock()
     {
-        return $this->getMockBuilder('\Alchemy\Zippy\Adapter\AdapterInterface')->getMock();
+        return $this->getMockBuilder('\Aarontong00\Zippy\Adapter\AdapterInterface')->getMock();
     }
 }

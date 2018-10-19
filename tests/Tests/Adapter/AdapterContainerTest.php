@@ -1,9 +1,9 @@
 <?php
 
-namespace Alchemy\Zippy\Tests\Adapter;
+namespace Aarontong00\Zippy\Tests\Adapter;
 
-use Alchemy\Zippy\Tests\TestCase;
-use Alchemy\Zippy\Adapter\AdapterContainer;
+use Aarontong00\Zippy\Tests\TestCase;
+use Aarontong00\Zippy\Adapter\AdapterContainer;
 
 class AdapterContainerTest extends TestCase
 {
@@ -12,13 +12,13 @@ class AdapterContainerTest extends TestCase
     {
         $container = AdapterContainer::load();
 
-        $this->assertInstanceOf('Alchemy\\Zippy\\Adapter\\ZipAdapter', $container['Alchemy\\Zippy\\Adapter\\ZipAdapter']);
-        $this->assertInstanceOf('Alchemy\\Zippy\\Adapter\\ZipExtensionAdapter', $container['Alchemy\\Zippy\\Adapter\\ZipExtensionAdapter']);
-        $this->assertInstanceOf('Alchemy\\Zippy\\Adapter\\GNUTar\\TarGNUTarAdapter', $container['Alchemy\\Zippy\\Adapter\\GNUTar\\TarGNUTarAdapter']);
-        $this->assertInstanceOf('Alchemy\\Zippy\\Adapter\\GNUTar\\TarGzGNUTarAdapter', $container['Alchemy\\Zippy\\Adapter\\GNUTar\\TarGzGNUTarAdapter']);
-        $this->assertInstanceOf('Alchemy\\Zippy\\Adapter\\GNUTar\\TarBz2GNUTarAdapter', $container['Alchemy\\Zippy\\Adapter\\GNUTar\\TarBz2GNUTarAdapter']);
-        $this->assertInstanceOf('Alchemy\\Zippy\\Adapter\\BSDTar\\TarGzBSDTarAdapter', $container['Alchemy\\Zippy\\Adapter\\BSDTar\\TarGzBSDTarAdapter']);
-        $this->assertInstanceOf('Alchemy\\Zippy\\Adapter\\BSDTar\\TarBSDTarAdapter', $container['Alchemy\\Zippy\\Adapter\\BSDTar\\TarBSDTarAdapter']);
-        $this->assertInstanceOf('Alchemy\\Zippy\\Adapter\\BSDTar\\TarBz2BSDTarAdapter', $container['Alchemy\\Zippy\\Adapter\\BSDTar\\TarBz2BSDTarAdapter']);
+        $this->assertInstanceOf('Aarontong00\\Zippy\\Adapter\\ZipAdapter', $container['Aarontong00\\Zippy\\Adapter\\ZipAdapter']);
+        $this->assertInstanceOf('Aarontong00\\Zippy\\Adapter\\ZipExtensionAdapter', $container['Aarontong00\\Zippy\\Adapter\\ZipExtensionAdapter']);
+        $this->assertInstanceOf('Aarontong00\\Zippy\\Adapter\\GNUTar\\TarGNUTarAdapter', $container['Aarontong00\\Zippy\\Adapter\\GNUTar\\TarGNUTarAdapter']);
+        $this->assertInstanceOf('Aarontong00\\Zippy\\Adapter\\GNUTar\\TarGzGNUTarAdapter', $container['Aarontong00\\Zippy\\Adapter\\GNUTar\\TarGzGNUTarAdapter']);
+        $this->assertInstanceOf('Aarontong00\\Zippy\\Adapter\\GNUTar\\TarBz2GNUTarAdapter', $container['Aarontong00\\Zippy\\Adapter\\GNUTar\\TarBz2GNUTarAdapter']);
+        $this->assertInstanceOf('Aarontong00\\Zippy\\Adapter\\BSDTar\\TarGzBSDTarAdapter', $container['Aarontong00\\Zippy\\Adapter\\BSDTar\\TarGzBSDTarAdapter']);
+        $this->assertInstanceOf('Aarontong00\\Zippy\\Adapter\\BSDTar\\TarBSDTarAdapter', $container['Aarontong00\\Zippy\\Adapter\\BSDTar\\TarBSDTarAdapter']);
+        $this->assertInstanceOf('Aarontong00\\Zippy\\Adapter\\BSDTar\\TarBz2BSDTarAdapter', $container['Aarontong00\\Zippy\\Adapter\\BSDTar\\TarBz2BSDTarAdapter']);
     }
 }

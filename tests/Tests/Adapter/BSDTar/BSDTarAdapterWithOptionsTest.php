@@ -1,9 +1,9 @@
 <?php
 
-namespace Alchemy\Zippy\Tests\Adapter\BSDTar;
+namespace Aarontong00\Zippy\Tests\Adapter\BSDTar;
 
-use Alchemy\Zippy\Tests\Adapter\AdapterTestCase;
-use Alchemy\Zippy\Parser\ParserFactory;
+use Aarontong00\Zippy\Tests\Adapter\AdapterTestCase;
+use Aarontong00\Zippy\Parser\ParserFactory;
 
 abstract class BSDTarAdapterWithOptionsTest extends AdapterTestCase
 {
@@ -40,7 +40,7 @@ abstract class BSDTarAdapterWithOptionsTest extends AdapterTestCase
     {
         $classname = static::getAdapterClassName();
 
-        $inflator = $this->getMockBuilder('\Alchemy\Zippy\ProcessBuilder\ProcessBuilderFactory')
+        $inflator = $this->getMockBuilder('\Aarontong00\Zippy\ProcessBuilder\ProcessBuilderFactory')
                 ->disableOriginalConstructor()
                 ->setMethods(array('useBinary'))
                 ->getMock();
@@ -74,15 +74,15 @@ abstract class BSDTarAdapterWithOptionsTest extends AdapterTestCase
         $finder = $this->getMockBuilder('\Symfony\Component\Process\ExecutableFinder')
             ->disableOriginalConstructor()
             ->getMock();
-        $manager = $this->getMockBuilder('\Alchemy\Zippy\Resource\ResourceManager')
+        $manager = $this->getMockBuilder('\Aarontong00\Zippy\Resource\ResourceManager')
             ->disableOriginalConstructor()
             ->getMock();
 
         $instance = $classname::newInstance(
             $finder,
             $manager,
-            $this->getMockBuilder('\Alchemy\Zippy\ProcessBuilder\ProcessBuilderFactoryInterface')->getMock(),
-            $this->getMockBuilder('\Alchemy\Zippy\ProcessBuilder\ProcessBuilderFactoryInterface')->getMock()
+            $this->getMockBuilder('\Aarontong00\Zippy\ProcessBuilder\ProcessBuilderFactoryInterface')->getMock(),
+            $this->getMockBuilder('\Aarontong00\Zippy\ProcessBuilder\ProcessBuilderFactoryInterface')->getMock()
         );
 
         $this->assertInstanceOf($classname, $instance);
@@ -196,7 +196,7 @@ abstract class BSDTarAdapterWithOptionsTest extends AdapterTestCase
     public function testOpen($tarFile)
     {
         $archive = $this->adapter->open($tarFile);
-        $this->assertInstanceOf('Alchemy\Zippy\Archive\ArchiveInterface', $archive);
+        $this->assertInstanceOf('Aarontong00\Zippy\Archive\ArchiveInterface', $archive);
 
         return $archive;
     }
@@ -244,7 +244,7 @@ abstract class BSDTarAdapterWithOptionsTest extends AdapterTestCase
     public function testAddFile()
     {
         $resource = $this->getResource(self::$tarFile);
-        $this->setExpectedException('Alchemy\Zippy\Exception\NotSupportedException', 'Updating a compressed tar archive is not supported.');
+        $this->setExpectedException('Aarontong00\Zippy\Exception\NotSupportedException', 'Updating a compressed tar archive is not supported.');
         $this->adapter->add($resource, array(__DIR__ . '/../TestCase.php'));
     }
 
@@ -403,7 +403,7 @@ abstract class BSDTarAdapterWithOptionsTest extends AdapterTestCase
             ->method('getProcess')
             ->will($this->returnValue($this->getSuccessFullMockProcess()));
 
-        $archiveFileMock = $this->getMockBuilder('\Alchemy\Zippy\Archive\MemberInterface')->getMock();
+        $archiveFileMock = $this->getMockBuilder('\Aarontong00\Zippy\Archive\MemberInterface')->getMock();
         $archiveFileMock
             ->expects($this->any())
             ->method('getLocation')

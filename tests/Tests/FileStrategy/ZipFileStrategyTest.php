@@ -1,8 +1,8 @@
 <?php
 
-namespace Alchemy\Zippy\Tests\FileStrategy;
+namespace Aarontong00\Zippy\Tests\FileStrategy;
 
-use Alchemy\Zippy\FileStrategy\ZipFileStrategy;
+use Aarontong00\Zippy\FileStrategy\ZipFileStrategy;
 
 class ZipFileStrategyTest extends FileStrategyTestCase
 {

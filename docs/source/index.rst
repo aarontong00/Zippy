@@ -33,7 +33,7 @@ at the root of your project :
 
     {
         "require": {
-            "alchemy/zippy": " ~0.1"
+            "Aarontong00/zippy": " ~0.1"
         }
     }
 
@@ -74,7 +74,7 @@ update, extract, delete) for the chosen format.
 
     <?php
 
-    use Alchemy\Zippy;
+    use Aarontong00\Zippy;
 
     $zippy = Zippy::load();
 
@@ -116,7 +116,7 @@ The right adapter will be matched when you open or create a new archive.
 
     <?php
 
-    use Alchemy\Zippy;
+    use Aarontong00\Zippy;
 
     $zippy = Zippy::load();
 
@@ -133,7 +133,7 @@ instance each time you create or open an archive.
 
     <?php
 
-    use Alchemy\Zippy;
+    use Aarontong00\Zippy;
 
     $zippy = Zippy::load();
 
@@ -171,7 +171,7 @@ the executable by its name;
 
     <?php
 
-    use Alchemy\Zippy;
+    use Aarontong00\Zippy;
 
     $zippy = Zippy::load();
 
@@ -207,13 +207,13 @@ the archive adapter.
 **Define your custom adapter**
 
 Your custom adapter class must implements the
-``Alchemy\Zippy\Adapter\AdapterInterface``.
+``Aarontong00\Zippy\Adapter\AdapterInterface``.
 
 .. code-block:: php
 
     <?php
 
-    use Alchemy\Zippy;
+    use Aarontong00\Zippy;
 
     class CustomAdapter implements Zippy\Adapter\AdapterInterface
     {
@@ -223,13 +223,13 @@ Your custom adapter class must implements the
 **Define a new strategy**
 
 Your custom strategy class must implements the
-``Alchemy\Zippy\Strategy\FileStrategy``.
+``Aarontong00\Zippy\Strategy\FileStrategy``.
 
 .. code-block:: php
 
     <?php
 
-    use Alchemy\Zippy;
+    use Aarontong00\Zippy;
 
     class CustomStrategy implements Zippy\Strategy\FileStrategy
     {
@@ -249,7 +249,7 @@ Your custom strategy class must implements the
 
     <?php
 
-    $zippy = Alchemy\Zippy::load();
+    $zippy = Aarontong00\Zippy::load();
 
     // add your strategy
     // This strategy for `tar.custom` files has priority over all previously
@@ -264,12 +264,12 @@ Handling Exceptions
 
 Zippy throws different types of exception :
 
-- ``\Alchemy\Zippy\Exception\NotSupportedException``
+- ``\Aarontong00\Zippy\Exception\NotSupportedException``
      is thrown when current operation is not supported.
-- ``\Alchemy\Zippy\Exception\RunTimeException``
-- ``\Alchemy\Zippy\Exception\InvalidArgumentException``
+- ``\Aarontong00\Zippy\Exception\RunTimeException``
+- ``\Aarontong00\Zippy\Exception\InvalidArgumentException``
 
-All these Exception implements ``\Alchemy\Zippy\Exception\ExceptionInterface``
+All these Exception implements ``\Aarontong00\Zippy\Exception\ExceptionInterface``
 so you can catch any of these exceptions by catching this exception interface.
 
 
@@ -300,7 +300,7 @@ you have `PHPUnit`_ installed, and, at the root of Zippy execute it :
 About
 -----
 
-Zippy has been written by the `Alchemy`_ dev team for `Phraseanet`_, our DAM
+Zippy has been written by the `Aarontong00`_ dev team for `Phraseanet`_, our DAM
 software. Try it, it's awesome !
 
 License
@@ -312,9 +312,9 @@ Zippy is licensed under the `MIT License`_
 .. _GNU TAR: http://www.gnu.org/software/tar/manual/
 .. _BSD TAR: http://www.freebsd.org/cgi/man.cgi?query=tar&sektion=1
 .. _ZIP: http://www.info-zip.org/
-.. _issue tracker: https://github.com/alchemy-fr/Zippy/issues
+.. _issue tracker: https://github.com/Aarontong00-fr/Zippy/issues
 .. _Pull Request: http://help.github.com/send-pull-requests/
 .. _PHPUnit: http://www.phpunit.de/manual/current/en/
-.. _Alchemy: http://alchemy.fr/
-.. _Phraseanet: https://github.com/alchemy-fr/Phraseanet
+.. _Aarontong00: http://Aarontong00.fr/
+.. _Phraseanet: https://github.com/Aarontong00-fr/Phraseanet
 .. _MIT License: http://opensource.org/licenses/MIT

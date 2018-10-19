@@ -1,13 +1,13 @@
 <?php
 
-namespace Alchemy\Zippy\Resource\Teleporter;
+namespace Aarontong00\Zippy\Resource\Teleporter;
 
-use Alchemy\Zippy\Exception\InvalidArgumentException;
-use Alchemy\Zippy\Exception\IOException;
-use Alchemy\Zippy\Resource\Resource as ZippyResource;
-use Alchemy\Zippy\Resource\ResourceLocator;
-use Alchemy\Zippy\Resource\ResourceReaderFactory;
-use Alchemy\Zippy\Resource\ResourceWriter;
+use Aarontong00\Zippy\Exception\InvalidArgumentException;
+use Aarontong00\Zippy\Exception\IOException;
+use Aarontong00\Zippy\Resource\Resource as ZippyResource;
+use Aarontong00\Zippy\Resource\ResourceLocator;
+use Aarontong00\Zippy\Resource\ResourceReaderFactory;
+use Aarontong00\Zippy\Resource\ResourceWriter;
 
 class GenericTeleporter implements TeleporterInterface
 {

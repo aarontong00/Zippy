@@ -1,16 +1,16 @@
 <?php
 
-namespace Alchemy\Zippy\Tests\Resource;
+namespace Aarontong00\Zippy\Tests\Resource;
 
-use Alchemy\Zippy\Resource\Resource;
-use Alchemy\Zippy\Tests\TestCase;
+use Aarontong00\Zippy\Resource\Resource;
+use Aarontong00\Zippy\Tests\TestCase;
 
 class ResourceTest extends TestCase
 {
     /**
-     * @covers Alchemy\Zippy\Resource\Resource::__construct
-     * @covers Alchemy\Zippy\Resource\Resource::getTarget
-     * @covers Alchemy\Zippy\Resource\Resource::getOriginal
+     * @covers Aarontong00\Zippy\Resource\Resource::__construct
+     * @covers Aarontong00\Zippy\Resource\Resource::getTarget
+     * @covers Aarontong00\Zippy\Resource\Resource::getOriginal
      */
     public function testGetTargetAndOriginal()
     {
@@ -24,7 +24,7 @@ class ResourceTest extends TestCase
     }
 
     /**
-     * @covers Alchemy\Zippy\Resource\Resource::canBeProcessedInPlace
+     * @covers Aarontong00\Zippy\Resource\Resource::canBeProcessedInPlace
      * @dataProvider provideProcessInPlaceData
      */
     public function testCanBeProcessedInPlace($expected, $context, $original, $target)

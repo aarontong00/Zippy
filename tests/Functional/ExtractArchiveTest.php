@@ -1,6 +1,6 @@
 <?php
 
-namespace Alchemy\Zippy\Functional;
+namespace Aarontong00\Zippy\Functional;
 
 use Symfony\Component\Finder\Finder;
 

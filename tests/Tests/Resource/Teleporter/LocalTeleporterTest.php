@@ -1,14 +1,14 @@
 <?php
 
-namespace Alchemy\Zippy\Tests\Resource\Teleporter;
+namespace Aarontong00\Zippy\Tests\Resource\Teleporter;
 
-use Alchemy\Zippy\Resource\Resource;
-use Alchemy\Zippy\Resource\Teleporter\LocalTeleporter;
+use Aarontong00\Zippy\Resource\Resource;
+use Aarontong00\Zippy\Resource\Teleporter\LocalTeleporter;
 
 class LocalTeleporterTest extends TeleporterTestCase
 {
     /**
-     * @covers Alchemy\Zippy\Resource\Teleporter\LocalTeleporter::teleport
+     * @covers Aarontong00\Zippy\Resource\Teleporter\LocalTeleporter::teleport
      * @dataProvider provideContexts
      */
     public function testTeleport($context)
@@ -29,7 +29,7 @@ class LocalTeleporterTest extends TeleporterTestCase
     }
 
     /**
-     * @covers Alchemy\Zippy\Resource\Teleporter\LocalTeleporter::teleport
+     * @covers Aarontong00\Zippy\Resource\Teleporter\LocalTeleporter::teleport
      * @dataProvider provideContexts
      */
     public function testTeleportAStream($context)
@@ -51,7 +51,7 @@ class LocalTeleporterTest extends TeleporterTestCase
 
     /**
      * @dataProvider provideInvalidSources
-     * @expectedException \Alchemy\Zippy\Exception\InvalidArgumentException
+     * @expectedException \Aarontong00\Zippy\Exception\InvalidArgumentException
      */
     public function testTeleportOnNonExistentFile($source)
     {
@@ -101,10 +101,10 @@ class LocalTeleporterTest extends TeleporterTestCase
     }
 
     /**
-     * @covers Alchemy\Zippy\Resource\Teleporter\LocalTeleporter::create
+     * @covers Aarontong00\Zippy\Resource\Teleporter\LocalTeleporter::create
      */
     public function testCreate()
     {
-        $this->assertInstanceOf('Alchemy\Zippy\Resource\Teleporter\LocalTeleporter', LocalTeleporter::create());
+        $this->assertInstanceOf('Aarontong00\Zippy\Resource\Teleporter\LocalTeleporter', LocalTeleporter::create());
     }
 }

@@ -1,10 +1,10 @@
 <?php
 
-namespace Alchemy\Zippy\Resource\Reader\Stream;
+namespace Aarontong00\Zippy\Resource\Reader\Stream;
 
-use Alchemy\Zippy\Resource\Resource as ZippyResource;
-use Alchemy\Zippy\Resource\ResourceReader;
-use Alchemy\Zippy\Resource\ResourceReaderFactory;
+use Aarontong00\Zippy\Resource\Resource as ZippyResource;
+use Aarontong00\Zippy\Resource\ResourceReader;
+use Aarontong00\Zippy\Resource\ResourceReaderFactory;
 
 class StreamReaderFactory implements ResourceReaderFactory
 {

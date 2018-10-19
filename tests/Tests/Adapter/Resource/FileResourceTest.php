@@ -1,9 +1,9 @@
 <?php
 
-namespace Alchemy\Zippy\Tests\Adapter\Resource;
+namespace Aarontong00\Zippy\Tests\Adapter\Resource;
 
-use Alchemy\Zippy\Tests\TestCase;
-use Alchemy\Zippy\Adapter\Resource\FileResource;
+use Aarontong00\Zippy\Tests\TestCase;
+use Aarontong00\Zippy\Adapter\Resource\FileResource;
 
 class FileResourceTest extends TestCase
 {

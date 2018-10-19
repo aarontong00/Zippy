@@ -1,8 +1,8 @@
 <?php
 
-namespace Alchemy\Zippy\Resource;
+namespace Aarontong00\Zippy\Resource;
 
-use Alchemy\Zippy\Resource\Resource as ZippyResource;
+use Aarontong00\Zippy\Resource\Resource as ZippyResource;
 
 interface ResourceReaderFactory
 {

@@ -3,17 +3,17 @@
 /*
  * This file is part of Zippy.
  *
- * (c) Alchemy <info@alchemy.fr>
+ * (c) Aarontong00 <info@Aarontong00.fr>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Alchemy\Zippy\Archive;
+namespace Aarontong00\Zippy\Archive;
 
-use Alchemy\Zippy\Adapter\Resource\ResourceInterface;
-use Alchemy\Zippy\Exception\InvalidArgumentException;
-use Alchemy\Zippy\Exception\RuntimeException;
+use Aarontong00\Zippy\Adapter\Resource\ResourceInterface;
+use Aarontong00\Zippy\Exception\InvalidArgumentException;
+use Aarontong00\Zippy\Exception\RuntimeException;
 
 interface MemberInterface
 {

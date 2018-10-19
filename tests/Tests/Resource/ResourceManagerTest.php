@@ -1,16 +1,16 @@
 <?php
 
-namespace Alchemy\Zippy\Tests\Resource;
+namespace Aarontong00\Zippy\Tests\Resource;
 
-use Alchemy\Zippy\Resource\ResourceCollection;
-use Alchemy\Zippy\Tests\TestCase;
-use Alchemy\Zippy\Resource\ResourceManager;
+use Aarontong00\Zippy\Resource\ResourceCollection;
+use Aarontong00\Zippy\Tests\TestCase;
+use Aarontong00\Zippy\Resource\ResourceManager;
 use Symfony\Component\Filesystem\Filesystem;
 
 class ResourceManagerTest extends TestCase
 {
     /**
-     * @covers Alchemy\Zippy\Resource\ResourceManager::handle
+     * @covers Aarontong00\Zippy\Resource\ResourceManager::handle
      */
     public function testHandle()
     {
@@ -63,7 +63,7 @@ class ResourceManagerTest extends TestCase
 
     private function createProcessableInPlaceResource()
     {
-        $resource = $this->getMockBuilder('\Alchemy\Zippy\Resource\Resource')
+        $resource = $this->getMockBuilder('\Aarontong00\Zippy\Resource\Resource')
             ->disableOriginalConstructor()
             ->getMock();
         $resource->expects($this->any())
@@ -75,7 +75,7 @@ class ResourceManagerTest extends TestCase
 
     private function createNotProcessableInPlaceResource()
     {
-        $resource = $this->getMockBuilder('\Alchemy\Zippy\Resource\Resource')
+        $resource = $this->getMockBuilder('\Aarontong00\Zippy\Resource\Resource')
             ->disableOriginalConstructor()
             ->getMock();
         $resource->expects($this->any())
@@ -86,7 +86,7 @@ class ResourceManagerTest extends TestCase
     }
 
     /**
-     * @covers Alchemy\Zippy\Resource\ResourceManager::cleanup
+     * @covers Aarontong00\Zippy\Resource\ResourceManager::cleanup
      */
     public function testCleanup()
     {
@@ -104,7 +104,7 @@ class ResourceManagerTest extends TestCase
             ->method('remove')
             ->with($this->equalTo($context));
 
-        $collection = $this->getMockBuilder('\Alchemy\Zippy\Resource\ResourceCollection')
+        $collection = $this->getMockBuilder('\Aarontong00\Zippy\Resource\ResourceCollection')
             ->disableOriginalConstructor()
             ->getMock();
 
@@ -120,7 +120,7 @@ class ResourceManagerTest extends TestCase
     }
 
     /**
-     * @covers Alchemy\Zippy\Resource\ResourceManager::cleanup
+     * @covers Aarontong00\Zippy\Resource\ResourceManager::cleanup
      */
     public function testCleanupWhenCollectionIsNotTemporary()
     {
@@ -135,7 +135,7 @@ class ResourceManagerTest extends TestCase
         $fs->expects($this->never())
             ->method('remove');
 
-        $collection = $this->getMockBuilder('\Alchemy\Zippy\Resource\ResourceCollection')
+        $collection = $this->getMockBuilder('\Aarontong00\Zippy\Resource\ResourceCollection')
             ->disableOriginalConstructor()
             ->getMock();
 
@@ -150,7 +150,7 @@ class ResourceManagerTest extends TestCase
     }
 
     /**
-     * @covers Alchemy\Zippy\Resource\ResourceManager::handle
+     * @covers Aarontong00\Zippy\Resource\ResourceManager::handle
      */
     public function testFunctionnal()
     {
@@ -220,14 +220,14 @@ class ResourceManagerTest extends TestCase
 
     protected function getRequestMapperMock()
     {
-        return $this->getMockBuilder('\Alchemy\Zippy\Resource\RequestMapper')
+        return $this->getMockBuilder('\Aarontong00\Zippy\Resource\RequestMapper')
             ->disableOriginalConstructor()
             ->getMock();
     }
 
     protected function getResourceTeleporterMock()
     {
-        return $this->getMockBuilder('\Alchemy\Zippy\Resource\ResourceTeleporter')
+        return $this->getMockBuilder('\Aarontong00\Zippy\Resource\ResourceTeleporter')
             ->disableOriginalConstructor()
             ->getMock();
     }

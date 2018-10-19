@@ -1,14 +1,14 @@
 <?php
 
-namespace Alchemy\Zippy\Tests\Resource;
+namespace Aarontong00\Zippy\Tests\Resource;
 
-use Alchemy\Zippy\Tests\TestCase;
-use Alchemy\Zippy\Resource\ResourceCollection;
+use Aarontong00\Zippy\Tests\TestCase;
+use Aarontong00\Zippy\Resource\ResourceCollection;
 
 class ResourceCollectionTest extends TestCase
 {
     /**
-     * @covers Alchemy\Zippy\Resource\ResourceCollection::__construct
+     * @covers Aarontong00\Zippy\Resource\ResourceCollection::__construct
      */
     public function testConstructWithoutElements()
     {
@@ -18,7 +18,7 @@ class ResourceCollectionTest extends TestCase
     }
 
     /**
-     * @covers Alchemy\Zippy\Resource\ResourceCollection::__construct
+     * @covers Aarontong00\Zippy\Resource\ResourceCollection::__construct
      */
     public function testConstructWithElements()
     {
@@ -30,13 +30,13 @@ class ResourceCollectionTest extends TestCase
 
     private function createResourceMock()
     {
-        return $this->getMockBuilder('\Alchemy\Zippy\Resource\Resource')
+        return $this->getMockBuilder('\Aarontong00\Zippy\Resource\Resource')
             ->disableOriginalConstructor()
             ->getMock();
     }
 
     /**
-     * @covers Alchemy\Zippy\Resource\ResourceCollection::canBeProcessedInPlace
+     * @covers Aarontong00\Zippy\Resource\ResourceCollection::canBeProcessedInPlace
      * @dataProvider provideVariousInPlaceResources
      */
     public function testCanBeProcessedInPlace($expected, $first, $second, $third)
@@ -63,7 +63,7 @@ class ResourceCollectionTest extends TestCase
 
     private function getInPlaceResource($processInPlace)
     {
-        $resource = $this->getMockBuilder('\Alchemy\Zippy\Resource\Resource')
+        $resource = $this->getMockBuilder('\Aarontong00\Zippy\Resource\Resource')
             ->disableOriginalConstructor()
             ->getMock();
 

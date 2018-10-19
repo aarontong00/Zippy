@@ -1,15 +1,15 @@
 <?php
 
-namespace Alchemy\Zippy\Tests\Adapter\VersionProbe;
+namespace Aarontong00\Zippy\Tests\Adapter\VersionProbe;
 
-use Alchemy\Zippy\Tests\TestCase;
-use Alchemy\Zippy\Adapter\VersionProbe\ZipExtensionVersionProbe;
-use Alchemy\Zippy\Adapter\VersionProbe\VersionProbeInterface;
+use Aarontong00\Zippy\Tests\TestCase;
+use Aarontong00\Zippy\Adapter\VersionProbe\ZipExtensionVersionProbe;
+use Aarontong00\Zippy\Adapter\VersionProbe\VersionProbeInterface;
 
 class ZipExtensionVersionProbeTest extends TestCase
 {
     /**
-     * @covers Alchemy\Zippy\Adapter\VersionProbe\ZipExtensionVersionProbe::getStatus
+     * @covers Aarontong00\Zippy\Adapter\VersionProbe\ZipExtensionVersionProbe::getStatus
      */
     public function testGetStatus()
     {

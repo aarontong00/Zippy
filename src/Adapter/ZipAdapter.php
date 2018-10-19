@@ -3,25 +3,25 @@
 /*
  * This file is part of Zippy.
  *
- * (c) Alchemy <info@alchemy.fr>
+ * (c) Aarontong00 <info@Aarontong00.fr>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Alchemy\Zippy\Adapter;
+namespace Aarontong00\Zippy\Adapter;
 
-use Alchemy\Zippy\Adapter\Resource\ResourceInterface;
-use Alchemy\Zippy\Adapter\VersionProbe\ZipVersionProbe;
-use Alchemy\Zippy\Archive\Archive;
-use Alchemy\Zippy\Archive\Member;
-use Alchemy\Zippy\Exception\InvalidArgumentException;
-use Alchemy\Zippy\Exception\NotSupportedException;
-use Alchemy\Zippy\Exception\RuntimeException;
-use Alchemy\Zippy\Parser\ParserInterface;
-use Alchemy\Zippy\ProcessBuilder\ProcessBuilderFactoryInterface;
-use Alchemy\Zippy\Resource\Resource as ZippyResource;
-use Alchemy\Zippy\Resource\ResourceManager;
+use Aarontong00\Zippy\Adapter\Resource\ResourceInterface;
+use Aarontong00\Zippy\Adapter\VersionProbe\ZipVersionProbe;
+use Aarontong00\Zippy\Archive\Archive;
+use Aarontong00\Zippy\Archive\Member;
+use Aarontong00\Zippy\Exception\InvalidArgumentException;
+use Aarontong00\Zippy\Exception\NotSupportedException;
+use Aarontong00\Zippy\Exception\RuntimeException;
+use Aarontong00\Zippy\Parser\ParserInterface;
+use Aarontong00\Zippy\ProcessBuilder\ProcessBuilderFactoryInterface;
+use Aarontong00\Zippy\Resource\Resource as ZippyResource;
+use Aarontong00\Zippy\Resource\ResourceManager;
 use Symfony\Component\Process\Exception\ExceptionInterface as ProcessException;
 
 /**

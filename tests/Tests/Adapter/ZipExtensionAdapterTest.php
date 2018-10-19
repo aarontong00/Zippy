@@ -1,9 +1,9 @@
 <?php
 
-namespace Alchemy\Zippy\Tests\Adapter;
+namespace Aarontong00\Zippy\Tests\Adapter;
 
-use Alchemy\Zippy\Adapter\ZipExtensionAdapter;
-use Alchemy\Zippy\Adapter\Resource\ZipArchiveResource;
+use Aarontong00\Zippy\Adapter\ZipExtensionAdapter;
+use Aarontong00\Zippy\Adapter\Resource\ZipArchiveResource;
 
 class ZipExtensionAdapterTest extends AdapterTestCase
 {
@@ -21,7 +21,7 @@ class ZipExtensionAdapterTest extends AdapterTestCase
     {
         $adapter = ZipExtensionAdapter::newInstance();
 
-        $this->assertInstanceOf('Alchemy\Zippy\Adapter\ZipExtensionAdapter', $adapter);
+        $this->assertInstanceOf('Aarontong00\Zippy\Adapter\ZipExtensionAdapter', $adapter);
     }
 
     protected function provideSupportedAdapter()
@@ -41,7 +41,7 @@ class ZipExtensionAdapterTest extends AdapterTestCase
     }
 
     /**
-     * @expectedException \Alchemy\Zippy\Exception\NotSupportedException
+     * @expectedException \Aarontong00\Zippy\Exception\NotSupportedException
      */
     public function testCreateNoFiles()
     {
@@ -55,13 +55,13 @@ class ZipExtensionAdapterTest extends AdapterTestCase
         $this->adapter = new ZipExtensionAdapter($manager);
         $this->setProbeIsOk($this->adapter);
         $archive = $this->adapter->create($file, array(__FILE__));
-        $this->assertInstanceOf('Alchemy\Zippy\Archive\Archive', $archive);
+        $this->assertInstanceOf('Aarontong00\Zippy\Archive\Archive', $archive);
         $this->assertFileExists($file);
         unlink($file);
     }
 
     /**
-     * @expectedException \Alchemy\Zippy\Exception\RuntimeException
+     * @expectedException \Aarontong00\Zippy\Exception\RuntimeException
      */
     public function testOpenWithWrongFileName()
     {
@@ -74,7 +74,7 @@ class ZipExtensionAdapterTest extends AdapterTestCase
         $file = __DIR__ . '/zip-file.zip';
         touch($file);
         $archive = $this->adapter->open($file);
-        $this->assertInstanceOf('Alchemy\Zippy\Archive\Archive', $archive);
+        $this->assertInstanceOf('Aarontong00\Zippy\Archive\Archive', $archive);
         unlink($file);
     }
 
@@ -109,7 +109,7 @@ class ZipExtensionAdapterTest extends AdapterTestCase
     }
 
     /**
-     * @expectedException \Alchemy\Zippy\Exception\InvalidArgumentException
+     * @expectedException \Aarontong00\Zippy\Exception\InvalidArgumentException
      */
     public function testExtractOnError()
     {
@@ -126,7 +126,7 @@ class ZipExtensionAdapterTest extends AdapterTestCase
     }
 
     /**
-     * @expectedException \Alchemy\Zippy\Exception\InvalidArgumentException
+     * @expectedException \Aarontong00\Zippy\Exception\InvalidArgumentException
      */
     public function testExtractWithInvalidTarget()
     {
@@ -138,7 +138,7 @@ class ZipExtensionAdapterTest extends AdapterTestCase
     }
 
     /**
-     * @expectedException \Alchemy\Zippy\Exception\InvalidArgumentException
+     * @expectedException \Aarontong00\Zippy\Exception\InvalidArgumentException
      */
     public function testExtractWithInvalidTarget2()
     {
@@ -172,7 +172,7 @@ class ZipExtensionAdapterTest extends AdapterTestCase
     }
 
     /**
-     * @expectedException \Alchemy\Zippy\Exception\InvalidArgumentException
+     * @expectedException \Aarontong00\Zippy\Exception\InvalidArgumentException
      */
     public function testRemoveWithLocateFailing()
     {
@@ -193,7 +193,7 @@ class ZipExtensionAdapterTest extends AdapterTestCase
     }
 
     /**
-     * @expectedException \Alchemy\Zippy\Exception\RuntimeException
+     * @expectedException \Aarontong00\Zippy\Exception\RuntimeException
      */
     public function testRemoveWithDeleteFailing()
     {
@@ -251,7 +251,7 @@ class ZipExtensionAdapterTest extends AdapterTestCase
     }
 
     /**
-     * @expectedException \Alchemy\Zippy\Exception\RuntimeException
+     * @expectedException \Aarontong00\Zippy\Exception\RuntimeException
      */
     public function testAddFailOnFile()
     {
@@ -280,7 +280,7 @@ class ZipExtensionAdapterTest extends AdapterTestCase
     }
 
     /**
-     * @expectedException \Alchemy\Zippy\Exception\RuntimeException
+     * @expectedException \Aarontong00\Zippy\Exception\RuntimeException
      */
     public function testAddFailOnDir()
     {

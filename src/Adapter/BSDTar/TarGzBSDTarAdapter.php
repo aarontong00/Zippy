@@ -1,9 +1,9 @@
 <?php
 
-namespace Alchemy\Zippy\Adapter\BSDTar;
+namespace Aarontong00\Zippy\Adapter\BSDTar;
 
-use Alchemy\Zippy\Adapter\Resource\ResourceInterface;
-use Alchemy\Zippy\Exception\NotSupportedException;
+use Aarontong00\Zippy\Adapter\Resource\ResourceInterface;
+use Aarontong00\Zippy\Exception\NotSupportedException;
 
 class TarGzBSDTarAdapter extends TarBSDTarAdapter
 {

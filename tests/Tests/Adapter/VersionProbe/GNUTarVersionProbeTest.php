@@ -1,12 +1,12 @@
 <?php
 
-namespace Alchemy\Zippy\Tests\Adapter\VersionProbe;
+namespace Aarontong00\Zippy\Tests\Adapter\VersionProbe;
 
 class GNUTarVersionProbeTest extends AbstractTarVersionProbeTest
 {
     public function getProbeClassName()
     {
-        return 'Alchemy\Zippy\Adapter\VersionProbe\GNUTarVersionProbe';
+        return 'Aarontong00\Zippy\Adapter\VersionProbe\GNUTarVersionProbe';
     }
 
     public function getCorrespondingVersionOutput()

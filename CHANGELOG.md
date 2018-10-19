@@ -39,9 +39,9 @@
 ### Changed
 - Use generic teleporter instead of Guzzle specific teleporter
 - Deprecate static method `create` on teleporters
-- Deprecate class `\Alchemy\Zippy\Resource\Teleporter\GuzzleTeleporter`
-- Deprecate class `\Alchemy\Zippy\Resource\Teleporter\LegacyGuzzleTeleporter`
-- Deprecate class `\Alchemy\Zippy\Resource\Teleporter\AbstractTeleporter`
+- Deprecate class `\Aarontong00\Zippy\Resource\Teleporter\GuzzleTeleporter`
+- Deprecate class `\Aarontong00\Zippy\Resource\Teleporter\LegacyGuzzleTeleporter`
+- Deprecate class `\Aarontong00\Zippy\Resource\Teleporter\AbstractTeleporter`
 
 ### Removed 
 - Remove usage of deprecated test method `getMock`

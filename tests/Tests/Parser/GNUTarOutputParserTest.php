@@ -1,9 +1,9 @@
 <?php
 
-namespace Alchemy\Zippy\Tests\Parser;
+namespace Aarontong00\Zippy\Tests\Parser;
 
-use Alchemy\Zippy\Parser\GNUTarOutputParser;
-use Alchemy\Zippy\Tests\TestCase;
+use Aarontong00\Zippy\Parser\GNUTarOutputParser;
+use Aarontong00\Zippy\Tests\TestCase;
 
 class GNUTarOutputParserTest extends TestCase
 {

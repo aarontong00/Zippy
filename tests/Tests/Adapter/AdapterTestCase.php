@@ -1,8 +1,8 @@
 <?php
 
-namespace Alchemy\Zippy\Tests\Adapter;
+namespace Aarontong00\Zippy\Tests\Adapter;
 
-use Alchemy\Zippy\Tests\TestCase;
+use Aarontong00\Zippy\Tests\TestCase;
 
 abstract class AdapterTestCase extends TestCase
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Alchemy\Zippy\Tests\Adapter\GNUTar;
+namespace Aarontong00\Zippy\Tests\Adapter\GNUTar;
 
 class TarGzGNUTarAdapterTest extends GNUTarAdapterWithOptionsTest
 {
@@ -11,6 +11,6 @@ class TarGzGNUTarAdapterTest extends GNUTarAdapterWithOptionsTest
 
     protected static function getAdapterClassName()
     {
-        return 'Alchemy\\Zippy\\Adapter\\GNUTar\\TarGzGNUTarAdapter';
+        return 'Aarontong00\\Zippy\\Adapter\\GNUTar\\TarGzGNUTarAdapter';
     }
 }

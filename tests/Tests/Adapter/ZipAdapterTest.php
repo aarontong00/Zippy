@@ -1,9 +1,9 @@
 <?php
 
-namespace Alchemy\Zippy\Tests\Adapter;
+namespace Aarontong00\Zippy\Tests\Adapter;
 
-use Alchemy\Zippy\Adapter\ZipAdapter;
-use Alchemy\Zippy\Parser\ParserFactory;
+use Aarontong00\Zippy\Adapter\ZipAdapter;
+use Aarontong00\Zippy\Parser\ParserFactory;
 
 class ZipAdapterTest extends AdapterTestCase
 {
@@ -37,7 +37,7 @@ class ZipAdapterTest extends AdapterTestCase
 
     protected function provideNotSupportedAdapter()
     {
-        $inflator = $deflator = $this->getMockBuilder('\Alchemy\Zippy\ProcessBuilder\ProcessBuilderFactory')
+        $inflator = $deflator = $this->getMockBuilder('\Aarontong00\Zippy\ProcessBuilder\ProcessBuilderFactory')
                                     ->disableOriginalConstructor()
                                     ->setMethods(array('useBinary'))
                                     ->getMock();
@@ -52,7 +52,7 @@ class ZipAdapterTest extends AdapterTestCase
 
     protected function provideSupportedAdapter()
     {
-        $inflator = $deflator = $this->getMockBuilder('\Alchemy\Zippy\ProcessBuilder\ProcessBuilderFactory')
+        $inflator = $deflator = $this->getMockBuilder('\Aarontong00\Zippy\ProcessBuilder\ProcessBuilderFactory')
                                     ->disableOriginalConstructor()
                                     ->setMethods(array('useBinary'))
                                     ->getMock();
@@ -66,7 +66,7 @@ class ZipAdapterTest extends AdapterTestCase
     }
 
     /**
-     * @expectedException \Alchemy\Zippy\Exception\NotSupportedException
+     * @expectedException \Aarontong00\Zippy\Exception\NotSupportedException
      */
     public function testCreateNoFiles()
     {
@@ -111,7 +111,7 @@ class ZipAdapterTest extends AdapterTestCase
 
         $manager = $this->getResourceManagerMock(__DIR__, array('lalala'));
         $outputParser = ParserFactory::create(ZipAdapter::getName());
-        $deflator = $this->getMockBuilder('\Alchemy\Zippy\ProcessBuilder\ProcessBuilderFactory')
+        $deflator = $this->getMockBuilder('\Aarontong00\Zippy\ProcessBuilder\ProcessBuilderFactory')
                                     ->disableOriginalConstructor()
                                     ->setMethods(array('useBinary'))
                                     ->getMock();
@@ -130,7 +130,7 @@ class ZipAdapterTest extends AdapterTestCase
     public function testOpen($zipFile)
     {
         $archive = $this->adapter->open($this->getResource($zipFile));
-        $this->assertInstanceOf('Alchemy\Zippy\Archive\ArchiveInterface', $archive);
+        $this->assertInstanceOf('Aarontong00\Zippy\Archive\ArchiveInterface', $archive);
     }
 
     public function testListMembers()
@@ -211,7 +211,7 @@ class ZipAdapterTest extends AdapterTestCase
             ->method('getProcess')
             ->will($this->returnValue($this->getSuccessFullMockProcess()));
 
-        $this->adapter->setParser($this->getMockBuilder('\Alchemy\Zippy\Parser\ParserInterface')->getMock());
+        $this->adapter->setParser($this->getMockBuilder('\Aarontong00\Zippy\Parser\ParserInterface')->getMock());
         $this->adapter->setInflator($this->getMockedProcessBuilderFactory($mockedProcessBuilder));
 
         $this->adapter->getInflatorVersion();
@@ -232,7 +232,7 @@ class ZipAdapterTest extends AdapterTestCase
             ->method('getProcess')
             ->will($this->returnValue($this->getSuccessFullMockProcess()));
 
-        $this->adapter->setParser($this->getMockBuilder('\Alchemy\Zippy\Parser\ParserInterface')->getMock());
+        $this->adapter->setParser($this->getMockBuilder('\Aarontong00\Zippy\Parser\ParserInterface')->getMock());
         $this->adapter->setDeflator($this->getMockedProcessBuilderFactory($mockedProcessBuilder));
 
         $this->adapter->getDeflatorVersion();
@@ -273,7 +273,7 @@ class ZipAdapterTest extends AdapterTestCase
             ->method('getProcess')
             ->will($this->returnValue($this->getSuccessFullMockProcess()));
 
-        $archiveFileMock = $this->getMockBuilder('\Alchemy\Zippy\Archive\MemberInterface')->getMock();
+        $archiveFileMock = $this->getMockBuilder('\Aarontong00\Zippy\Archive\MemberInterface')->getMock();
 
         $archiveFileMock
             ->expects($this->any())

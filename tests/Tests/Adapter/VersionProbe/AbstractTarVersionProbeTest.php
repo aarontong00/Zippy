@@ -1,15 +1,15 @@
 <?php
 
-namespace Alchemy\Zippy\Tests\Adapter\VersionProbe;
+namespace Aarontong00\Zippy\Tests\Adapter\VersionProbe;
 
-use Alchemy\Zippy\Tests\TestCase;
-use Alchemy\Zippy\Adapter\VersionProbe\BSDTarVersionProbe;
-use Alchemy\Zippy\Adapter\VersionProbe\VersionProbeInterface;
+use Aarontong00\Zippy\Tests\TestCase;
+use Aarontong00\Zippy\Adapter\VersionProbe\BSDTarVersionProbe;
+use Aarontong00\Zippy\Adapter\VersionProbe\VersionProbeInterface;
 
 abstract class AbstractTarVersionProbeTest extends TestCase
 {
     /**
-     * @covers Alchemy\Zippy\Adapter\VersionProbe\BSDTarVersionProbe::getStatus
+     * @covers Aarontong00\Zippy\Adapter\VersionProbe\BSDTarVersionProbe::getStatus
      */
     public function testGetStatusIsOk()
     {
@@ -27,7 +27,7 @@ abstract class AbstractTarVersionProbeTest extends TestCase
 
     /**
      * @dataProvider provideInvalidVersions
-     * @covers Alchemy\Zippy\Adapter\VersionProbe\BSDTarVersionProbe::getStatus
+     * @covers Aarontong00\Zippy\Adapter\VersionProbe\BSDTarVersionProbe::getStatus
      */
     public function testGetStatusIsNotOk($inflatorVersion, $deflatorVersion, $inflatorCall, $deflatorCall)
     {

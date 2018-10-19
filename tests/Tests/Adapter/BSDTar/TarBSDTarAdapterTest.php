@@ -1,10 +1,10 @@
 <?php
 
-namespace Alchemy\Zippy\Tests\Adapter\BSDTar;
+namespace Aarontong00\Zippy\Tests\Adapter\BSDTar;
 
-use Alchemy\Zippy\Adapter\BSDTar\TarBSDTarAdapter;
-use Alchemy\Zippy\Tests\Adapter\AdapterTestCase;
-use Alchemy\Zippy\Parser\ParserFactory;
+use Aarontong00\Zippy\Adapter\BSDTar\TarBSDTarAdapter;
+use Aarontong00\Zippy\Tests\Adapter\AdapterTestCase;
+use Aarontong00\Zippy\Parser\ParserFactory;
 
 class TarBSDTarAdapterTest extends AdapterTestCase
 {
@@ -38,7 +38,7 @@ class TarBSDTarAdapterTest extends AdapterTestCase
 
     private function provideAdapter()
     {
-        $inflator = $this->getMockBuilder('\Alchemy\Zippy\ProcessBuilder\ProcessBuilderFactory')
+        $inflator = $this->getMockBuilder('\Aarontong00\Zippy\ProcessBuilder\ProcessBuilderFactory')
                 ->disableOriginalConstructor()
                 ->setMethods(array('useBinary'))
                 ->getMock();
@@ -159,7 +159,7 @@ class TarBSDTarAdapterTest extends AdapterTestCase
     public function testOpen($tarFile)
     {
         $archive = $this->adapter->open($tarFile);
-        $this->assertInstanceOf('Alchemy\Zippy\Archive\ArchiveInterface', $archive);
+        $this->assertInstanceOf('Aarontong00\Zippy\Archive\ArchiveInterface', $archive);
 
         return $archive;
     }
@@ -363,7 +363,7 @@ class TarBSDTarAdapterTest extends AdapterTestCase
             ->method('getProcess')
             ->will($this->returnValue($this->getSuccessFullMockProcess()));
 
-        $archiveFileMock = $this->getMockBuilder('\Alchemy\Zippy\Archive\MemberInterface')->getMock();
+        $archiveFileMock = $this->getMockBuilder('\Aarontong00\Zippy\Archive\MemberInterface')->getMock();
 
         $archiveFileMock
             ->expects($this->any())

@@ -1,11 +1,11 @@
 <?php
 
-namespace Alchemy\Zippy\Tests;
+namespace Aarontong00\Zippy\Tests;
 
-use Alchemy\Zippy\Zippy;
-use Alchemy\Zippy\Exception\NoAdapterOnPlatformException;
-use Alchemy\Zippy\Exception\FormatNotSupportedException;
-use Alchemy\Zippy\Exception\RuntimeException;
+use Aarontong00\Zippy\Zippy;
+use Aarontong00\Zippy\Exception\NoAdapterOnPlatformException;
+use Aarontong00\Zippy\Exception\FormatNotSupportedException;
+use Aarontong00\Zippy\Exception\RuntimeException;
 
 class ZippyTest extends TestCase
 {
@@ -220,7 +220,7 @@ class ZippyTest extends TestCase
 
     private function getStrategy($extension, $adapters)
     {
-        $strategy = $this->getMockBuilder('\Alchemy\Zippy\FileStrategy\FileStrategyInterface')->getMock();
+        $strategy = $this->getMockBuilder('\Aarontong00\Zippy\FileStrategy\FileStrategyInterface')->getMock();
 
         $strategy->expects($this->any())
             ->method('getFileExtension')
@@ -235,7 +235,7 @@ class ZippyTest extends TestCase
 
     private function getSupportedAdapter()
     {
-        $adapter = $this->getMockBuilder('\Alchemy\Zippy\Adapter\AdapterInterface')->getMock();
+        $adapter = $this->getMockBuilder('\Aarontong00\Zippy\Adapter\AdapterInterface')->getMock();
         $adapter->expects($this->any())
             ->method('isSupported')
             ->will($this->returnValue(true));
@@ -245,7 +245,7 @@ class ZippyTest extends TestCase
 
     private function getNotSupportedAdapter()
     {
-        $adapter = $this->getMockBuilder('\Alchemy\Zippy\Adapter\AdapterInterface')->getMock();
+        $adapter = $this->getMockBuilder('\Aarontong00\Zippy\Adapter\AdapterInterface')->getMock();
         $adapter->expects($this->any())
             ->method('isSupported')
             ->will($this->returnValue(false));
@@ -255,6 +255,6 @@ class ZippyTest extends TestCase
 
     private function getContainer()
     {
-        return $this->getMockBuilder('\Alchemy\Zippy\Adapter\AdapterContainer')->getMock();
+        return $this->getMockBuilder('\Aarontong00\Zippy\Adapter\AdapterContainer')->getMock();
     }
 }

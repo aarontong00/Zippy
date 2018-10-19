@@ -1,9 +1,9 @@
 <?php
 
-namespace Alchemy\Zippy\Tests\Resource;
+namespace Aarontong00\Zippy\Tests\Resource;
 
-use Alchemy\Zippy\Tests\TestCase;
-use Alchemy\Zippy\Resource\TargetLocator;
+use Aarontong00\Zippy\Tests\TestCase;
+use Aarontong00\Zippy\Resource\TargetLocator;
 
 class TargetLocatorTest extends TestCase
 {
@@ -17,7 +17,7 @@ class TargetLocatorTest extends TestCase
     }
 
     /**
-     * @expectedException Alchemy\Zippy\Exception\TargetLocatorException
+     * @expectedException Aarontong00\Zippy\Exception\TargetLocatorException
      */
     public function testLocateThatShouldFail()
     {
@@ -26,7 +26,7 @@ class TargetLocatorTest extends TestCase
     }
 
     /**
-     * @expectedException Alchemy\Zippy\Exception\TargetLocatorException
+     * @expectedException Aarontong00\Zippy\Exception\TargetLocatorException
      */
     public function testLocateThatShouldFail2()
     {
@@ -35,7 +35,7 @@ class TargetLocatorTest extends TestCase
     }
 
     /**
-     * @expectedException Alchemy\Zippy\Exception\TargetLocatorException
+     * @expectedException Aarontong00\Zippy\Exception\TargetLocatorException
      */
     public function testLocateThatShouldFail3()
     {

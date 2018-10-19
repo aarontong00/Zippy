@@ -3,7 +3,7 @@
 /*
  * This file is part of Zippy.
  *
- * (c) Alchemy <info@alchemy.fr>
+ * (c) Aarontong00 <info@Aarontong00.fr>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -11,21 +11,21 @@
 
 namespace Aarontong00\Zippy;
 
-use Alchemy\Zippy\Adapter\AdapterContainer;
-use Alchemy\Zippy\Adapter\AdapterInterface;
-use Alchemy\Zippy\Archive\ArchiveInterface;
-use Alchemy\Zippy\Exception\ExceptionInterface;
-use Alchemy\Zippy\Exception\FormatNotSupportedException;
-use Alchemy\Zippy\Exception\NoAdapterOnPlatformException;
-use Alchemy\Zippy\Exception\RuntimeException;
-use Alchemy\Zippy\FileStrategy\FileStrategyInterface;
-use Alchemy\Zippy\FileStrategy\TarBz2FileStrategy;
-use Alchemy\Zippy\FileStrategy\TarFileStrategy;
-use Alchemy\Zippy\FileStrategy\TarGzFileStrategy;
-use Alchemy\Zippy\FileStrategy\TB2FileStrategy;
-use Alchemy\Zippy\FileStrategy\TBz2FileStrategy;
-use Alchemy\Zippy\FileStrategy\TGzFileStrategy;
-use Alchemy\Zippy\FileStrategy\ZipFileStrategy;
+use Aarontong00\Zippy\Adapter\AdapterContainer;
+use Aarontong00\Zippy\Adapter\AdapterInterface;
+use Aarontong00\Zippy\Archive\ArchiveInterface;
+use Aarontong00\Zippy\Exception\ExceptionInterface;
+use Aarontong00\Zippy\Exception\FormatNotSupportedException;
+use Aarontong00\Zippy\Exception\NoAdapterOnPlatformException;
+use Aarontong00\Zippy\Exception\RuntimeException;
+use Aarontong00\Zippy\FileStrategy\FileStrategyInterface;
+use Aarontong00\Zippy\FileStrategy\TarBz2FileStrategy;
+use Aarontong00\Zippy\FileStrategy\TarFileStrategy;
+use Aarontong00\Zippy\FileStrategy\TarGzFileStrategy;
+use Aarontong00\Zippy\FileStrategy\TB2FileStrategy;
+use Aarontong00\Zippy\FileStrategy\TBz2FileStrategy;
+use Aarontong00\Zippy\FileStrategy\TGzFileStrategy;
+use Aarontong00\Zippy\FileStrategy\ZipFileStrategy;
 
 class Zippy
 {

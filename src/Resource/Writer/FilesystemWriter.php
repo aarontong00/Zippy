@@ -1,9 +1,9 @@
 <?php
 
-namespace Alchemy\Zippy\Resource\Writer;
+namespace Aarontong00\Zippy\Resource\Writer;
 
-use Alchemy\Zippy\Resource\ResourceReader;
-use Alchemy\Zippy\Resource\ResourceWriter;
+use Aarontong00\Zippy\Resource\ResourceReader;
+use Aarontong00\Zippy\Resource\ResourceWriter;
 
 class FilesystemWriter implements ResourceWriter
 {

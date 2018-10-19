@@ -1,12 +1,12 @@
 <?php
 
-namespace Alchemy\Zippy\Adapter\GNUTar;
+namespace Aarontong00\Zippy\Adapter\GNUTar;
 
-use Alchemy\Zippy\Adapter\AbstractTarAdapter;
-use Alchemy\Zippy\Adapter\VersionProbe\GNUTarVersionProbe;
-use Alchemy\Zippy\Parser\ParserInterface;
-use Alchemy\Zippy\Resource\ResourceManager;
-use Alchemy\Zippy\ProcessBuilder\ProcessBuilderFactoryInterface;
+use Aarontong00\Zippy\Adapter\AbstractTarAdapter;
+use Aarontong00\Zippy\Adapter\VersionProbe\GNUTarVersionProbe;
+use Aarontong00\Zippy\Parser\ParserInterface;
+use Aarontong00\Zippy\Resource\ResourceManager;
+use Aarontong00\Zippy\ProcessBuilder\ProcessBuilderFactoryInterface;
 
 /**
  * GNUTarAdapter allows you to create and extract files from archives using GNU tar

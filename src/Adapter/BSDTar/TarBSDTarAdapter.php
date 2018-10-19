@@ -1,12 +1,12 @@
 <?php
 
-namespace Alchemy\Zippy\Adapter\BSDTar;
+namespace Aarontong00\Zippy\Adapter\BSDTar;
 
-use Alchemy\Zippy\Adapter\AbstractTarAdapter;
-use Alchemy\Zippy\Adapter\VersionProbe\BSDTarVersionProbe;
-use Alchemy\Zippy\Parser\ParserInterface;
-use Alchemy\Zippy\Resource\ResourceManager;
-use Alchemy\Zippy\ProcessBuilder\ProcessBuilderFactoryInterface;
+use Aarontong00\Zippy\Adapter\AbstractTarAdapter;
+use Aarontong00\Zippy\Adapter\VersionProbe\BSDTarVersionProbe;
+use Aarontong00\Zippy\Parser\ParserInterface;
+use Aarontong00\Zippy\Resource\ResourceManager;
+use Aarontong00\Zippy\ProcessBuilder\ProcessBuilderFactoryInterface;
 
 /**
  * BSDTAR allows you to create and extract files from archives using BSD tar

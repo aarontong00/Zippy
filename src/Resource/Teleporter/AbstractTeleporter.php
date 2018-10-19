@@ -3,20 +3,20 @@
 /*
  * This file is part of Zippy.
  *
- * (c) Alchemy <info@alchemy.fr>
+ * (c) Aarontong00 <info@Aarontong00.fr>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Alchemy\Zippy\Resource\Teleporter;
+namespace Aarontong00\Zippy\Resource\Teleporter;
 
-use Alchemy\Zippy\Exception\IOException;
-use Alchemy\Zippy\Resource\Resource as ZippyResource;
+use Aarontong00\Zippy\Exception\IOException;
+use Aarontong00\Zippy\Resource\Resource as ZippyResource;
 
 /**
  * Class AbstractTeleporter
- * @package Alchemy\Zippy\Resource\Teleporter
+ * @package Aarontong00\Zippy\Resource\Teleporter
  *
  * @deprecated Typehint against TeleporterInterface instead and use GenericTeleporter
 *  with custom reader/writers instead. This class will be removed in v0.5.x

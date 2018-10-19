@@ -5,20 +5,20 @@ project = u'Zippy'
 # Tex info conf
 texinfo_documents = [
   ('index', 'Zippy', u'Zippy Documentation',
-   u'Alchemy', 'Zippy', 'PHP compression companion.',
+   u'Aarontong00', 'Zippy', 'PHP compression companion.',
    'Miscellaneous'),
 ]
 
 # Man page conf
 man_pages = [
     ('index', 'Zippy', u'Zippy Documentation',
-     [u'Alchemy'], 1)
+     [u'Aarontong00'], 1)
 ]
 
 # Latex doc conf
 latex_documents = [
   ('index', 'Zippy.tex', u'Zippy Documentation',
-   u'Alchemy', 'manual'),
+   u'Aarontong00', 'manual'),
 ]
 
 # html help basename
@@ -30,5 +30,5 @@ version = '0.1'
 # release
 release = '0.1'
 
-# Copyright Value  ex : copyright = u'2012, Alchemy'
-copyright = u'2012, Alchemy'
+# Copyright Value  ex : copyright = u'2012, Aarontong00'
+copyright = u'2012, Aarontong00'

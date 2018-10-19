@@ -1,8 +1,8 @@
 <?php
 
-namespace Alchemy\Zippy\Resource;
+namespace Aarontong00\Zippy\Resource;
 
-use Alchemy\Zippy\Resource\Resource AS ZippyResource;
+use Aarontong00\Zippy\Resource\Resource AS ZippyResource;
 
 class ResourceLocator
 {

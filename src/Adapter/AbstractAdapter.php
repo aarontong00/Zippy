@@ -3,23 +3,23 @@
 /*
  * This file is part of Zippy.
  *
- * (c) Alchemy <info@alchemy.fr>
+ * (c) Aarontong00 <info@Aarontong00.fr>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  *
  */
 
-namespace Alchemy\Zippy\Adapter;
+namespace Aarontong00\Zippy\Adapter;
 
-use Alchemy\Zippy\Adapter\Resource\ResourceInterface;
-use Alchemy\Zippy\Adapter\VersionProbe\VersionProbeInterface;
-use Alchemy\Zippy\Archive\Archive;
-use Alchemy\Zippy\Archive\ArchiveInterface;
-use Alchemy\Zippy\Exception\RuntimeException;
-use Alchemy\Zippy\Exception\InvalidArgumentException;
-use Alchemy\Zippy\Resource\PathUtil;
-use Alchemy\Zippy\Resource\ResourceManager;
+use Aarontong00\Zippy\Adapter\Resource\ResourceInterface;
+use Aarontong00\Zippy\Adapter\VersionProbe\VersionProbeInterface;
+use Aarontong00\Zippy\Archive\Archive;
+use Aarontong00\Zippy\Archive\ArchiveInterface;
+use Aarontong00\Zippy\Exception\RuntimeException;
+use Aarontong00\Zippy\Exception\InvalidArgumentException;
+use Aarontong00\Zippy\Resource\PathUtil;
+use Aarontong00\Zippy\Resource\ResourceManager;
 
 abstract class AbstractAdapter implements AdapterInterface
 {

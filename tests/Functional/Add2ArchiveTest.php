@@ -1,6 +1,6 @@
 <?php
 
-namespace Alchemy\Zippy\Functional;
+namespace Aarontong00\Zippy\Functional;
 
 use Symfony\Component\Finder\Finder;
 
@@ -19,7 +19,7 @@ class Add2ArchiveTest extends FunctionalTestCase
     }
 
     /**
-     * @return \Alchemy\Zippy\Archive\ArchiveInterface
+     * @return \Aarontong00\Zippy\Archive\ArchiveInterface
      */
     private function create()
     {
@@ -50,12 +50,12 @@ class Add2ArchiveTest extends FunctionalTestCase
         }
 
         if (in_array(get_class($this->getAdapter()), array(
-            'Alchemy\Zippy\Adapter\GNUTar\TarGzGNUTarAdapter',
-            'Alchemy\Zippy\Adapter\GNUTar\TarBz2GNUTarAdapter',
-            'Alchemy\Zippy\Adapter\BSDTar\TarGzBSDTarAdapter',
-            'Alchemy\Zippy\Adapter\BSDTar\TarBz2BSDTarAdapter',
+            'Aarontong00\Zippy\Adapter\GNUTar\TarGzGNUTarAdapter',
+            'Aarontong00\Zippy\Adapter\GNUTar\TarBz2GNUTarAdapter',
+            'Aarontong00\Zippy\Adapter\BSDTar\TarGzBSDTarAdapter',
+            'Aarontong00\Zippy\Adapter\BSDTar\TarBz2BSDTarAdapter',
         ))) {
-            $this->setExpectedException('Alchemy\Zippy\Exception\NotSupportedException', 'Updating a compressed tar archive is not supported.');
+            $this->setExpectedException('Aarontong00\Zippy\Exception\NotSupportedException', 'Updating a compressed tar archive is not supported.');
         }
 
         $archive->addMembers(array('somemorefiles/nicephoto.jpg' => __DIR__ . '/samples/morefiles/morephoto.jpg'));
