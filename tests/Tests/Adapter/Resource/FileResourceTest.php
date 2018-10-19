@@ -1,9 +1,9 @@
 <?php
 
-namespace Aarontong00\Zippy\Tests\Adapter\Resource;
+namespace aarontong00\Zippy\Tests\Adapter\Resource;
 
-use Aarontong00\Zippy\Tests\TestCase;
-use Aarontong00\Zippy\Adapter\Resource\FileResource;
+use aarontong00\Zippy\Tests\TestCase;
+use aarontong00\Zippy\Adapter\Resource\FileResource;
 
 class FileResourceTest extends TestCase
 {

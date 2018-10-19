@@ -1,18 +1,18 @@
 <?php
 
-namespace Aarontong00\Zippy\Tests\Resource;
+namespace aarontong00\Zippy\Tests\Resource;
 
-use Aarontong00\Zippy\Tests\TestCase;
-use Aarontong00\Zippy\Resource\RequestMapper;
+use aarontong00\Zippy\Tests\TestCase;
+use aarontong00\Zippy\Resource\RequestMapper;
 
 class RequestMapperTest extends TestCase
 {
     /**
-     * @covers Aarontong00\Zippy\Resource\RequestMapper::map
+     * @covers aarontong00\Zippy\Resource\RequestMapper::map
      */
     public function testMap()
     {
-        $locator = $this->getMockBuilder('\Aarontong00\Zippy\Resource\TargetLocator')
+        $locator = $this->getMockBuilder('\aarontong00\Zippy\Resource\TargetLocator')
             ->disableOriginalConstructor()
             ->getMock();
 
@@ -28,12 +28,12 @@ class RequestMapperTest extends TestCase
             'here' => __DIR__ . '/input/path/to/local/file3.ext',
         ));
 
-        $this->assertInstanceOf('Aarontong00\Zippy\Resource\ResourceCollection', $collection);
+        $this->assertInstanceOf('aarontong00\Zippy\Resource\ResourceCollection', $collection);
         $this->assertCount(3, $collection);
 
         $firstFound = $secondFound = $thirdFound = false;
         foreach ($collection as $resource) {
-            $this->assertInstanceOf('Aarontong00\Zippy\Resource\Resource', $resource);
+            $this->assertInstanceOf('aarontong00\Zippy\Resource\Resource', $resource);
 
             if (__DIR__ . '/input/path/to/local/file.ext' === $resource->getOriginal()) {
                 $firstFound = true;
@@ -55,11 +55,11 @@ class RequestMapperTest extends TestCase
     }
 
     /**
-     * @covers Aarontong00\Zippy\Resource\RequestMapper::create
+     * @covers aarontong00\Zippy\Resource\RequestMapper::create
      */
     public function testCreate()
     {
         $mapper = RequestMapper::create();
-        $this->assertInstanceOf('Aarontong00\Zippy\Resource\RequestMapper', $mapper);
+        $this->assertInstanceOf('aarontong00\Zippy\Resource\RequestMapper', $mapper);
     }
 }

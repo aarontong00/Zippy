@@ -1,12 +1,12 @@
 <?php
 
-namespace Aarontong00\Zippy\Adapter\GNUTar;
+namespace aarontong00\Zippy\Adapter\GNUTar;
 
-use Aarontong00\Zippy\Adapter\AbstractTarAdapter;
-use Aarontong00\Zippy\Adapter\VersionProbe\GNUTarVersionProbe;
-use Aarontong00\Zippy\Parser\ParserInterface;
-use Aarontong00\Zippy\Resource\ResourceManager;
-use Aarontong00\Zippy\ProcessBuilder\ProcessBuilderFactoryInterface;
+use aarontong00\Zippy\Adapter\AbstractTarAdapter;
+use aarontong00\Zippy\Adapter\VersionProbe\GNUTarVersionProbe;
+use aarontong00\Zippy\Parser\ParserInterface;
+use aarontong00\Zippy\Resource\ResourceManager;
+use aarontong00\Zippy\ProcessBuilder\ProcessBuilderFactoryInterface;
 
 /**
  * GNUTarAdapter allows you to create and extract files from archives using GNU tar

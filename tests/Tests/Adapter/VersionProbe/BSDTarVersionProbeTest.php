@@ -1,12 +1,12 @@
 <?php
 
-namespace Aarontong00\Zippy\Tests\Adapter\VersionProbe;
+namespace aarontong00\Zippy\Tests\Adapter\VersionProbe;
 
 class BSDTarVersionProbeTest extends AbstractTarVersionProbeTest
 {
     public function getProbeClassName()
     {
-        return 'Aarontong00\Zippy\Adapter\VersionProbe\BSDTarVersionProbe';
+        return 'aarontong00\Zippy\Adapter\VersionProbe\BSDTarVersionProbe';
     }
 
     public function getCorrespondingVersionOutput()

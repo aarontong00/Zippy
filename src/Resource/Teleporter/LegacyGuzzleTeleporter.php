@@ -3,24 +3,24 @@
 /*
  * This file is part of Zippy.
  *
- * (c) Aarontong00 <info@Aarontong00.fr>
+ * (c) aarontong00 <info@aarontong00.fr>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Aarontong00\Zippy\Resource\Teleporter;
+namespace aarontong00\Zippy\Resource\Teleporter;
 
-use Aarontong00\Zippy\Resource\Reader\Guzzle\LegacyGuzzleReaderFactory;
-use Aarontong00\Zippy\Resource\ResourceLocator;
-use Aarontong00\Zippy\Resource\ResourceReaderFactory;
-use Aarontong00\Zippy\Resource\Writer\FilesystemWriter;
+use aarontong00\Zippy\Resource\Reader\Guzzle\LegacyGuzzleReaderFactory;
+use aarontong00\Zippy\Resource\ResourceLocator;
+use aarontong00\Zippy\Resource\ResourceReaderFactory;
+use aarontong00\Zippy\Resource\Writer\FilesystemWriter;
 use Guzzle\Http\Client;
 
 /**
  * Guzzle Teleporter implementation for HTTP resources
  *
- * @deprecated Use \Aarontong00\Zippy\Resource\GenericTeleporter instead. This class will be removed in v0.5.x
+ * @deprecated Use \aarontong00\Zippy\Resource\GenericTeleporter instead. This class will be removed in v0.5.x
  */
 class LegacyGuzzleTeleporter extends GenericTeleporter
 {

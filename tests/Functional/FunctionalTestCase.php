@@ -1,9 +1,9 @@
 <?php
 
-namespace Aarontong00\Zippy\Functional;
+namespace aarontong00\Zippy\Functional;
 
-use Aarontong00\Zippy\Adapter\AdapterInterface;
-use Aarontong00\Zippy\Adapter\AdapterContainer;
+use aarontong00\Zippy\Adapter\AdapterInterface;
+use aarontong00\Zippy\Adapter\AdapterContainer;
 use Symfony\Component\Filesystem\Filesystem;
 
 abstract class FunctionalTestCase extends \PHPUnit_Framework_TestCase
@@ -25,7 +25,7 @@ abstract class FunctionalTestCase extends \PHPUnit_Framework_TestCase
             throw new \RuntimeException('ZIPPY_ADAPTER environment variable is not set');
         }
 
-        $adapter = 'Aarontong00\\Zippy\\Adapter\\' . getenv('ZIPPY_ADAPTER');
+        $adapter = 'aarontong00\\Zippy\\Adapter\\' . getenv('ZIPPY_ADAPTER');
 
         if (!class_exists($adapter)) {
             throw new \InvalidArgumentException(sprintf('class %s does not exist', $adapter));
@@ -44,20 +44,20 @@ abstract class FunctionalTestCase extends \PHPUnit_Framework_TestCase
     protected function getArchiveFileForAdapter($adapter)
     {
         switch (get_class($adapter)) {
-            case 'Aarontong00\Zippy\Adapter\ZipAdapter':
-            case 'Aarontong00\Zippy\Adapter\ZipExtensionAdapter':
+            case 'aarontong00\Zippy\Adapter\ZipAdapter':
+            case 'aarontong00\Zippy\Adapter\ZipExtensionAdapter':
                 return __DIR__ . '/samples/archive.zip';
                 break;
-            case 'Aarontong00\Zippy\Adapter\BSDTar\TarGzBSDTarAdapter':
-            case 'Aarontong00\Zippy\Adapter\GNUTar\TarGzGNUTarAdapter':
+            case 'aarontong00\Zippy\Adapter\BSDTar\TarGzBSDTarAdapter':
+            case 'aarontong00\Zippy\Adapter\GNUTar\TarGzGNUTarAdapter':
                 return __DIR__ . '/samples/archive.tar.gz';
                 break;
-            case 'Aarontong00\Zippy\Adapter\BSDTar\TarBz2BSDTarAdapter':
-            case 'Aarontong00\Zippy\Adapter\GNUTar\TarBz2GNUTarAdapter':
+            case 'aarontong00\Zippy\Adapter\BSDTar\TarBz2BSDTarAdapter':
+            case 'aarontong00\Zippy\Adapter\GNUTar\TarBz2GNUTarAdapter':
                 return __DIR__ . '/samples/archive.tar.bz2';
                 break;
-            case 'Aarontong00\Zippy\Adapter\BSDTar\TarBSDTarAdapter':
-            case 'Aarontong00\Zippy\Adapter\GNUTar\TarGNUTarAdapter':
+            case 'aarontong00\Zippy\Adapter\BSDTar\TarBSDTarAdapter':
+            case 'aarontong00\Zippy\Adapter\GNUTar\TarGNUTarAdapter':
                 return __DIR__ . '/samples/archive.tar';
                 break;
             default:
@@ -69,20 +69,20 @@ abstract class FunctionalTestCase extends \PHPUnit_Framework_TestCase
     protected function getArchiveExtensionForAdapter($adapter)
     {
         switch (get_class($adapter)) {
-            case 'Aarontong00\Zippy\Adapter\ZipAdapter':
-            case 'Aarontong00\Zippy\Adapter\ZipExtensionAdapter':
+            case 'aarontong00\Zippy\Adapter\ZipAdapter':
+            case 'aarontong00\Zippy\Adapter\ZipExtensionAdapter':
                 return 'zip';
                 break;
-            case 'Aarontong00\Zippy\Adapter\BSDTar\TarGzBSDTarAdapter':
-            case 'Aarontong00\Zippy\Adapter\GNUTar\TarGzGNUTarAdapter':
+            case 'aarontong00\Zippy\Adapter\BSDTar\TarGzBSDTarAdapter':
+            case 'aarontong00\Zippy\Adapter\GNUTar\TarGzGNUTarAdapter':
                 return 'tar.gz';
                 break;
-            case 'Aarontong00\Zippy\Adapter\BSDTar\TarBz2BSDTarAdapter':
-            case 'Aarontong00\Zippy\Adapter\GNUTar\TarBz2GNUTarAdapter':
+            case 'aarontong00\Zippy\Adapter\BSDTar\TarBz2BSDTarAdapter':
+            case 'aarontong00\Zippy\Adapter\GNUTar\TarBz2GNUTarAdapter':
                 return 'tar.bz2';
                 break;
-            case 'Aarontong00\Zippy\Adapter\BSDTar\TarBSDTarAdapter':
-            case 'Aarontong00\Zippy\Adapter\GNUTar\TarGNUTarAdapter':
+            case 'aarontong00\Zippy\Adapter\BSDTar\TarBSDTarAdapter':
+            case 'aarontong00\Zippy\Adapter\GNUTar\TarGNUTarAdapter':
                 return 'tar';
                 break;
             default:

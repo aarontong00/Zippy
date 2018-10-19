@@ -3,17 +3,17 @@
 /*
  * This file is part of Zippy.
  *
- * (c) Aarontong00 <info@Aarontong00.fr>
+ * (c) aarontong00 <info@aarontong00.fr>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Aarontong00\Zippy\Resource\Teleporter;
+namespace aarontong00\Zippy\Resource\Teleporter;
 
-use Aarontong00\Zippy\Resource\Reader\Stream\StreamReaderFactory;
-use Aarontong00\Zippy\Resource\ResourceLocator;
-use Aarontong00\Zippy\Resource\Writer\StreamWriter;
+use aarontong00\Zippy\Resource\Reader\Stream\StreamReaderFactory;
+use aarontong00\Zippy\Resource\ResourceLocator;
+use aarontong00\Zippy\Resource\Writer\StreamWriter;
 
 /**
  * This class transport an object using php stream wrapper

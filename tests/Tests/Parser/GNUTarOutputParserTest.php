@@ -1,9 +1,9 @@
 <?php
 
-namespace Aarontong00\Zippy\Tests\Parser;
+namespace aarontong00\Zippy\Tests\Parser;
 
-use Aarontong00\Zippy\Parser\GNUTarOutputParser;
-use Aarontong00\Zippy\Tests\TestCase;
+use aarontong00\Zippy\Parser\GNUTarOutputParser;
+use aarontong00\Zippy\Tests\TestCase;
 
 class GNUTarOutputParserTest extends TestCase
 {

@@ -1,14 +1,14 @@
 <?php
 
-namespace Aarontong00\Zippy\Tests\Resource\Teleporter;
+namespace aarontong00\Zippy\Tests\Resource\Teleporter;
 
-use Aarontong00\Zippy\Resource\Teleporter\GuzzleTeleporter;
-use Aarontong00\Zippy\Resource\Resource;
+use aarontong00\Zippy\Resource\Teleporter\GuzzleTeleporter;
+use aarontong00\Zippy\Resource\Resource;
 
 class GuzzleTeleporterTest extends TeleporterTestCase
 {
     /**
-     * @covers Aarontong00\Zippy\Resource\Teleporter\GuzzleTeleporter::teleport
+     * @covers aarontong00\Zippy\Resource\Teleporter\GuzzleTeleporter::teleport
      * @dataProvider provideContexts
      */
     public function testTeleport($context)
@@ -29,10 +29,10 @@ class GuzzleTeleporterTest extends TeleporterTestCase
     }
 
     /**
-     * @covers Aarontong00\Zippy\Resource\Teleporter\GuzzleTeleporter::create
+     * @covers aarontong00\Zippy\Resource\Teleporter\GuzzleTeleporter::create
      */
     public function testCreate()
     {
-        $this->assertInstanceOf('Aarontong00\Zippy\Resource\Teleporter\GuzzleTeleporter', GuzzleTeleporter::create());
+        $this->assertInstanceOf('aarontong00\Zippy\Resource\Teleporter\GuzzleTeleporter', GuzzleTeleporter::create());
     }
 }

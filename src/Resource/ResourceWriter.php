@@ -1,6 +1,6 @@
 <?php
 
-namespace Aarontong00\Zippy\Resource;
+namespace aarontong00\Zippy\Resource;
 
 interface ResourceWriter 
 {

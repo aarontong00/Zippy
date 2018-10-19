@@ -1,8 +1,8 @@
 <?php
 
-namespace Aarontong00\Zippy\Resource;
+namespace aarontong00\Zippy\Resource;
 
-use Aarontong00\Zippy\Resource\Resource as ZippyResource;
+use aarontong00\Zippy\Resource\Resource as ZippyResource;
 
 interface ResourceReaderFactory
 {

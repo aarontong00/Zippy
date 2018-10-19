@@ -1,10 +1,10 @@
 # Zippy
 
-[![License](https://img.shields.io/packagist/l/Aarontong00/zippy.svg?style=flat-square)](https://github.com/Aarontong00-fr/Zippy/LICENSE)
-[![Packagist](https://img.shields.io/packagist/v/Aarontong00/zippy.svg?style=flat-square)](https://packagist.org/packages/Aarontong00/zippy)
-[![Travis](https://img.shields.io/travis/Aarontong00-fr/Zippy.svg?style=flat-square)](https://travis-ci.org/Aarontong00-fr/Zippy)
-[![Scrutinizer](https://img.shields.io/scrutinizer/g/Aarontong00-fr/Zippy.svg?style=flat-square)](https://scrutinizer-ci.com/g/Aarontong00-fr/Zippy/)
-[![Packagist](https://img.shields.io/packagist/dt/Aarontong00/zippy.svg?style=flat-square)](https://packagist.org/packages/Aarontong00/zippy/stats)
+[![License](https://img.shields.io/packagist/l/aarontong00/zippy.svg?style=flat-square)](https://github.com/aarontong00-fr/Zippy/LICENSE)
+[![Packagist](https://img.shields.io/packagist/v/aarontong00/zippy.svg?style=flat-square)](https://packagist.org/packages/aarontong00/zippy)
+[![Travis](https://img.shields.io/travis/aarontong00-fr/Zippy.svg?style=flat-square)](https://travis-ci.org/aarontong00-fr/Zippy)
+[![Scrutinizer](https://img.shields.io/scrutinizer/g/aarontong00-fr/Zippy.svg?style=flat-square)](https://scrutinizer-ci.com/g/aarontong00-fr/Zippy/)
+[![Packagist](https://img.shields.io/packagist/dt/aarontong00/zippy.svg?style=flat-square)](https://packagist.org/packages/aarontong00/zippy/stats)
 
 A PHP library to read, create, and extract archives in various formats via command line utilities or PHP extensions
 
@@ -13,7 +13,7 @@ A PHP library to read, create, and extract archives in various formats via comma
 The only supported installation method is via [Composer](https://getcomposer.org). Run the following command to require Zippy in your project:
 
 ```
-composer require Aarontong00/zippy
+composer require aarontong00/zippy
 ```
 
 ## Adapters
@@ -40,7 +40,7 @@ All the following code samples assume that Zippy is loaded and available as `$zi
 ```
 <?php
 
-use Aarontong00\Zippy\Zippy;
+use aarontong00\Zippy\Zippy;
 
 // Require Composer's autoloader
 require __DIR__ . '/vendor/autoload.php';

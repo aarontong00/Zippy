@@ -1,8 +1,8 @@
 <?php
 
-namespace Aarontong00\Zippy\Tests\Resource\Teleporter;
+namespace aarontong00\Zippy\Tests\Resource\Teleporter;
 
-use Aarontong00\Zippy\Tests\TestCase;
+use aarontong00\Zippy\Tests\TestCase;
 
 class TeleporterTestCase extends TestCase
 {

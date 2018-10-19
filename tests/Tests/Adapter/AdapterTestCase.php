@@ -1,8 +1,8 @@
 <?php
 
-namespace Aarontong00\Zippy\Tests\Adapter;
+namespace aarontong00\Zippy\Tests\Adapter;
 
-use Aarontong00\Zippy\Tests\TestCase;
+use aarontong00\Zippy\Tests\TestCase;
 
 abstract class AdapterTestCase extends TestCase
 {

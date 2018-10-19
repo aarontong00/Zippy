@@ -1,9 +1,9 @@
 <?php
 
-namespace Aarontong00\Zippy\Adapter\GNUTar;
+namespace aarontong00\Zippy\Adapter\GNUTar;
 
-use Aarontong00\Zippy\Adapter\Resource\ResourceInterface;
-use Aarontong00\Zippy\Exception\NotSupportedException;
+use aarontong00\Zippy\Adapter\Resource\ResourceInterface;
+use aarontong00\Zippy\Exception\NotSupportedException;
 
 class TarBz2GNUTarAdapter extends TarGNUTarAdapter
 {

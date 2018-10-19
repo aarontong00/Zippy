@@ -3,12 +3,12 @@
 /*
  * This file is part of Zippy.
  *
- * (c) Aarontong00 <info@Aarontong00.fr>
+ * (c) aarontong00 <info@aarontong00.fr>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace Aarontong00\Zippy\Parser;
+namespace aarontong00\Zippy\Parser;
 
 /**
  * This class is responsible of parsing GNUTar command line output
@@ -63,7 +63,7 @@ class ZipOutputParser implements ParserInterface
             $mtime = \DateTime::createFromFormat($this->dateFormat, $chunks[2]);
 
             if ($mtime === false) {
-                // See https://github.com/Aarontong00-fr/Zippy/issues/111#issuecomment-251668427
+                // See https://github.com/aarontong00-fr/Zippy/issues/111#issuecomment-251668427
                 $mtime = \DateTime::createFromFormat('H:i Y-m-d', $chunks[2]);
             }
 

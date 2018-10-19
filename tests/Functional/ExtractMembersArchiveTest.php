@@ -1,8 +1,8 @@
 <?php
 
-namespace Aarontong00\Zippy\Functional;
+namespace aarontong00\Zippy\Functional;
 
-use Aarontong00\Zippy\Archive\ArchiveInterface;
+use aarontong00\Zippy\Archive\ArchiveInterface;
 
 class ExtractMembersArchiveTest extends FunctionalTestCase
 {

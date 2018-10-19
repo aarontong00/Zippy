@@ -1,6 +1,6 @@
 <?php
 
-namespace Aarontong00\Zippy\Functional;
+namespace aarontong00\Zippy\Functional;
 
 class ListArchiveTest extends FunctionalTestCase
 {
@@ -28,7 +28,7 @@ class ListArchiveTest extends FunctionalTestCase
         );
 
         foreach ($archive as $member) {
-            $this->assertInstanceOf('Aarontong00\Zippy\Archive\MemberInterface', $member);
+            $this->assertInstanceOf('aarontong00\Zippy\Archive\MemberInterface', $member);
             $this->assertContains($member->getLocation(), $files2find);
             unset($files2find[array_search($member->getLocation(), $files2find)]);
         }

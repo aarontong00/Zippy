@@ -1,9 +1,9 @@
 <?php
 
-namespace Aarontong00\Zippy\Resource\Writer;
+namespace aarontong00\Zippy\Resource\Writer;
 
-use Aarontong00\Zippy\Resource\ResourceReader;
-use Aarontong00\Zippy\Resource\ResourceWriter;
+use aarontong00\Zippy\Resource\ResourceReader;
+use aarontong00\Zippy\Resource\ResourceWriter;
 
 class StreamWriter implements ResourceWriter
 {

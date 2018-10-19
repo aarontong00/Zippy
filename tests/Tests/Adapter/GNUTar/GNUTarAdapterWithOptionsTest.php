@@ -1,9 +1,9 @@
 <?php
 
-namespace Aarontong00\Zippy\Tests\Adapter\GNUTar;
+namespace aarontong00\Zippy\Tests\Adapter\GNUTar;
 
-use Aarontong00\Zippy\Tests\Adapter\AdapterTestCase;
-use Aarontong00\Zippy\Parser\ParserFactory;
+use aarontong00\Zippy\Tests\Adapter\AdapterTestCase;
+use aarontong00\Zippy\Parser\ParserFactory;
 
 abstract class GNUTarAdapterWithOptionsTest extends AdapterTestCase
 {
@@ -40,7 +40,7 @@ abstract class GNUTarAdapterWithOptionsTest extends AdapterTestCase
     {
         $classname = static::getAdapterClassName();
 
-        $inflator = $this->getMockBuilder('\Aarontong00\Zippy\ProcessBuilder\ProcessBuilderFactory')
+        $inflator = $this->getMockBuilder('\aarontong00\Zippy\ProcessBuilder\ProcessBuilderFactory')
                 ->disableOriginalConstructor()
                 ->setMethods(array('useBinary'))
                 ->getMock();
@@ -172,7 +172,7 @@ abstract class GNUTarAdapterWithOptionsTest extends AdapterTestCase
     public function testOpen()
     {
         $archive = $this->adapter->open($this->getResource(self::$tarFile));
-        $this->assertInstanceOf('Aarontong00\Zippy\Archive\ArchiveInterface', $archive);
+        $this->assertInstanceOf('aarontong00\Zippy\Archive\ArchiveInterface', $archive);
 
         return $archive;
     }
@@ -226,7 +226,7 @@ abstract class GNUTarAdapterWithOptionsTest extends AdapterTestCase
     public function testAddFile()
     {
         $resource = $this->getResource(self::$tarFile);
-        $this->setExpectedException('Aarontong00\Zippy\Exception\NotSupportedException', 'Updating a compressed tar archive is not supported.');
+        $this->setExpectedException('aarontong00\Zippy\Exception\NotSupportedException', 'Updating a compressed tar archive is not supported.');
         $this->adapter->add($resource, array(__DIR__ . '/../TestCase.php'));
     }
 
@@ -391,7 +391,7 @@ abstract class GNUTarAdapterWithOptionsTest extends AdapterTestCase
             ->method('getProcess')
             ->will($this->returnValue($this->getSuccessFullMockProcess()));
 
-        $archiveFileMock = $this->getMockBuilder('\Aarontong00\Zippy\Archive\MemberInterface')->getMock();
+        $archiveFileMock = $this->getMockBuilder('\aarontong00\Zippy\Archive\MemberInterface')->getMock();
 
         $archiveFileMock
             ->expects($this->any())

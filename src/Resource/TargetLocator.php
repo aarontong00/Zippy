@@ -3,15 +3,15 @@
 /*
  * This file is part of Zippy.
  *
- * (c) Aarontong00 <info@Aarontong00.fr>
+ * (c) aarontong00 <info@aarontong00.fr>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Aarontong00\Zippy\Resource;
+namespace aarontong00\Zippy\Resource;
 
-use Aarontong00\Zippy\Exception\TargetLocatorException;
+use aarontong00\Zippy\Exception\TargetLocatorException;
 
 class TargetLocator
 {

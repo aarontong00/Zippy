@@ -1,14 +1,14 @@
 <?php
 
-namespace Aarontong00\Zippy\Tests\Resource\Teleporter;
+namespace aarontong00\Zippy\Tests\Resource\Teleporter;
 
-use Aarontong00\Zippy\Resource\Resource;
-use Aarontong00\Zippy\Resource\Teleporter\StreamTeleporter;
+use aarontong00\Zippy\Resource\Resource;
+use aarontong00\Zippy\Resource\Teleporter\StreamTeleporter;
 
 class StreamTeleporterTest extends TeleporterTestCase
 {
     /**
-     * @covers Aarontong00\Zippy\Resource\Teleporter\StreamTeleporter::teleport
+     * @covers aarontong00\Zippy\Resource\Teleporter\StreamTeleporter::teleport
      * @dataProvider provideContexts
      */
     public function testTeleport($context)
@@ -29,7 +29,7 @@ class StreamTeleporterTest extends TeleporterTestCase
     }
 
     /**
-     * @covers Aarontong00\Zippy\Resource\Teleporter\StreamTeleporter::teleport
+     * @covers aarontong00\Zippy\Resource\Teleporter\StreamTeleporter::teleport
      * @dataProvider provideContexts
      */
     public function testTeleportInNonStreamMode($context)
@@ -50,10 +50,10 @@ class StreamTeleporterTest extends TeleporterTestCase
     }
 
     /**
-     * @covers Aarontong00\Zippy\Resource\Teleporter\StreamTeleporter::create
+     * @covers aarontong00\Zippy\Resource\Teleporter\StreamTeleporter::create
      */
     public function testCreate()
     {
-        $this->assertInstanceOf('Aarontong00\Zippy\Resource\Teleporter\StreamTeleporter', StreamTeleporter::create());
+        $this->assertInstanceOf('aarontong00\Zippy\Resource\Teleporter\StreamTeleporter', StreamTeleporter::create());
     }
 }

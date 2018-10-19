@@ -1,10 +1,10 @@
 <?php
 
-namespace Aarontong00\Zippy\Tests\FileStrategy;
+namespace aarontong00\Zippy\Tests\FileStrategy;
 
-use Aarontong00\Zippy\Adapter\AdapterContainer;
-use Aarontong00\Zippy\Tests\TestCase;
-use Aarontong00\Zippy\Exception\RuntimeException;
+use aarontong00\Zippy\Adapter\AdapterContainer;
+use aarontong00\Zippy\Tests\TestCase;
+use aarontong00\Zippy\Exception\RuntimeException;
 
 class AbstractFileStrategyTest extends TestCase
 {
@@ -15,7 +15,7 @@ class AbstractFileStrategyTest extends TestCase
     {
         $container = AdapterContainer::load();
 
-        $stub = $this->getMockForAbstractClass('Aarontong00\Zippy\FileStrategy\AbstractFileStrategy', array($container));
+        $stub = $this->getMockForAbstractClass('aarontong00\Zippy\FileStrategy\AbstractFileStrategy', array($container));
         $stub->expects($this->any())
             ->method('getServiceNames')
             ->will($this->returnValue(array(
@@ -32,44 +32,44 @@ class AbstractFileStrategyTest extends TestCase
     {
         $container = AdapterContainer::load();
 
-        $stub = $this->getMockForAbstractClass('Aarontong00\Zippy\FileStrategy\AbstractFileStrategy', array($container));
+        $stub = $this->getMockForAbstractClass('aarontong00\Zippy\FileStrategy\AbstractFileStrategy', array($container));
         $stub->expects($this->any())
             ->method('getServiceNames')
             ->will($this->returnValue(array(
-                'Aarontong00\\Zippy\\Adapter\\ZipAdapter',
-                'Aarontong00\\Zippy\\Adapter\\ZipExtensionAdapter'
+                'aarontong00\\Zippy\\Adapter\\ZipAdapter',
+                'aarontong00\\Zippy\\Adapter\\ZipExtensionAdapter'
             )));
 
         $adapters = $stub->getAdapters();
         $this->assertInternalType('array', $adapters);
         $this->assertCount(2, $adapters);
         foreach ($adapters as $adapter) {
-            $this->assertInstanceOf('Aarontong00\\Zippy\\Adapter\\AdapterInterface', $adapter);
+            $this->assertInstanceOf('aarontong00\\Zippy\\Adapter\\AdapterInterface', $adapter);
         }
     }
 
     public function testGetAdaptersWithAdapterThatRaiseAnException()
     {
-        $adapterMock = $this->getMockBuilder('\Aarontong00\Zippy\Adapter\AdapterInterface')->getMock();
-        $container = $this->getMockBuilder('\Aarontong00\Zippy\Adapter\AdapterContainer')->getMock();
+        $adapterMock = $this->getMockBuilder('\aarontong00\Zippy\Adapter\AdapterInterface')->getMock();
+        $container = $this->getMockBuilder('\aarontong00\Zippy\Adapter\AdapterContainer')->getMock();
         $container
             ->expects($this->at(0))
             ->method('offsetGet')
-            ->with($this->equalTo('Aarontong00\\Zippy\\Adapter\\ZipAdapter'))
+            ->with($this->equalTo('aarontong00\\Zippy\\Adapter\\ZipAdapter'))
             ->will($this->returnValue($adapterMock));
 
         $container
             ->expects($this->at(1))
             ->method('offsetGet')
-            ->with($this->equalTo('Aarontong00\\Zippy\\Adapter\\ZipExtensionAdapter'))
+            ->with($this->equalTo('aarontong00\\Zippy\\Adapter\\ZipExtensionAdapter'))
             ->will($this->throwException(new RuntimeException()));
 
-        $stub = $this->getMockForAbstractClass('Aarontong00\Zippy\FileStrategy\AbstractFileStrategy', array($container));
+        $stub = $this->getMockForAbstractClass('aarontong00\Zippy\FileStrategy\AbstractFileStrategy', array($container));
         $stub->expects($this->any())
             ->method('getServiceNames')
             ->will($this->returnValue(array(
-                'Aarontong00\\Zippy\\Adapter\\ZipAdapter',
-                'Aarontong00\\Zippy\\Adapter\\ZipExtensionAdapter'
+                'aarontong00\\Zippy\\Adapter\\ZipAdapter',
+                'aarontong00\\Zippy\\Adapter\\ZipExtensionAdapter'
             )));
 
         $adapters = $stub->getAdapters();

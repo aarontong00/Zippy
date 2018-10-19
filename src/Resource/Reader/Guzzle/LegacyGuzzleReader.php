@@ -1,9 +1,9 @@
 <?php
 
-namespace Aarontong00\Zippy\Resource\Reader\Guzzle;
+namespace aarontong00\Zippy\Resource\Reader\Guzzle;
 
-use Aarontong00\Zippy\Resource\Resource as ZippyResource;
-use Aarontong00\Zippy\Resource\ResourceReader;
+use aarontong00\Zippy\Resource\Resource as ZippyResource;
+use aarontong00\Zippy\Resource\ResourceReader;
 use Guzzle\Http\Client;
 use Guzzle\Http\ClientInterface;
 use Guzzle\Http\EntityBodyInterface;
@@ -16,7 +16,7 @@ class LegacyGuzzleReader implements ResourceReader
     private $client;
 
     /**
-     * @var \Aarontong00\Zippy\Resource\Resource $resource
+     * @var \aarontong00\Zippy\Resource\Resource $resource
      */
     private $resource;
 

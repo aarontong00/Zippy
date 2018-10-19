@@ -1,11 +1,11 @@
 <?php
 
-namespace Aarontong00\Zippy\Tests\Resource;
+namespace aarontong00\Zippy\Tests\Resource;
 
-use Aarontong00\Zippy\Resource\Reader\Stream\StreamReader;
-use Aarontong00\Zippy\Resource\Resource;
-use Aarontong00\Zippy\Resource\Writer\FilesystemWriter;
-use Aarontong00\Zippy\Tests\TestCase;
+use aarontong00\Zippy\Resource\Reader\Stream\StreamReader;
+use aarontong00\Zippy\Resource\Resource;
+use aarontong00\Zippy\Resource\Writer\FilesystemWriter;
+use aarontong00\Zippy\Tests\TestCase;
 
 class FilesystemWriterTest extends TestCase
 {

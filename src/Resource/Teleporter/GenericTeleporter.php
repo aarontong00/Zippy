@@ -1,13 +1,13 @@
 <?php
 
-namespace Aarontong00\Zippy\Resource\Teleporter;
+namespace aarontong00\Zippy\Resource\Teleporter;
 
-use Aarontong00\Zippy\Exception\InvalidArgumentException;
-use Aarontong00\Zippy\Exception\IOException;
-use Aarontong00\Zippy\Resource\Resource as ZippyResource;
-use Aarontong00\Zippy\Resource\ResourceLocator;
-use Aarontong00\Zippy\Resource\ResourceReaderFactory;
-use Aarontong00\Zippy\Resource\ResourceWriter;
+use aarontong00\Zippy\Exception\InvalidArgumentException;
+use aarontong00\Zippy\Exception\IOException;
+use aarontong00\Zippy\Resource\Resource as ZippyResource;
+use aarontong00\Zippy\Resource\ResourceLocator;
+use aarontong00\Zippy\Resource\ResourceReaderFactory;
+use aarontong00\Zippy\Resource\ResourceWriter;
 
 class GenericTeleporter implements TeleporterInterface
 {

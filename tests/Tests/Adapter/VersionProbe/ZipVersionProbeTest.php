@@ -1,15 +1,15 @@
 <?php
 
-namespace Aarontong00\Zippy\Tests\Adapter\VersionProbe;
+namespace aarontong00\Zippy\Tests\Adapter\VersionProbe;
 
-use Aarontong00\Zippy\Tests\TestCase;
-use Aarontong00\Zippy\Adapter\VersionProbe\ZipVersionProbe;
-use Aarontong00\Zippy\Adapter\VersionProbe\VersionProbeInterface;
+use aarontong00\Zippy\Tests\TestCase;
+use aarontong00\Zippy\Adapter\VersionProbe\ZipVersionProbe;
+use aarontong00\Zippy\Adapter\VersionProbe\VersionProbeInterface;
 
 class ZipVersionProbeTest extends TestCase
 {
     /**
-     * @covers Aarontong00\Zippy\Adapter\VersionProbe\ZipVersionProbe::getStatus
+     * @covers aarontong00\Zippy\Adapter\VersionProbe\ZipVersionProbe::getStatus
      */
     public function testGetStatusIsOk()
     {
@@ -96,7 +96,7 @@ Examples (see unzip.txt for more info):
         $this->assertEquals(VersionProbeInterface::PROBE_OK, $probe->getStatus());
     }
     /**
-     * @covers Aarontong00\Zippy\Adapter\VersionProbe\ZipVersionProbe::getStatus
+     * @covers aarontong00\Zippy\Adapter\VersionProbe\ZipVersionProbe::getStatus
      */
     public function testGetStatusIsNotOk()
     {

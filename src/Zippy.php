@@ -3,29 +3,29 @@
 /*
  * This file is part of Zippy.
  *
- * (c) Aarontong00 <info@Aarontong00.fr>
+ * (c) aarontong00 <info@aarontong00.fr>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Aarontong00\Zippy;
+namespace aarontong00\Zippy;
 
-use Aarontong00\Zippy\Adapter\AdapterContainer;
-use Aarontong00\Zippy\Adapter\AdapterInterface;
-use Aarontong00\Zippy\Archive\ArchiveInterface;
-use Aarontong00\Zippy\Exception\ExceptionInterface;
-use Aarontong00\Zippy\Exception\FormatNotSupportedException;
-use Aarontong00\Zippy\Exception\NoAdapterOnPlatformException;
-use Aarontong00\Zippy\Exception\RuntimeException;
-use Aarontong00\Zippy\FileStrategy\FileStrategyInterface;
-use Aarontong00\Zippy\FileStrategy\TarBz2FileStrategy;
-use Aarontong00\Zippy\FileStrategy\TarFileStrategy;
-use Aarontong00\Zippy\FileStrategy\TarGzFileStrategy;
-use Aarontong00\Zippy\FileStrategy\TB2FileStrategy;
-use Aarontong00\Zippy\FileStrategy\TBz2FileStrategy;
-use Aarontong00\Zippy\FileStrategy\TGzFileStrategy;
-use Aarontong00\Zippy\FileStrategy\ZipFileStrategy;
+use aarontong00\Zippy\Adapter\AdapterContainer;
+use aarontong00\Zippy\Adapter\AdapterInterface;
+use aarontong00\Zippy\Archive\ArchiveInterface;
+use aarontong00\Zippy\Exception\ExceptionInterface;
+use aarontong00\Zippy\Exception\FormatNotSupportedException;
+use aarontong00\Zippy\Exception\NoAdapterOnPlatformException;
+use aarontong00\Zippy\Exception\RuntimeException;
+use aarontong00\Zippy\FileStrategy\FileStrategyInterface;
+use aarontong00\Zippy\FileStrategy\TarBz2FileStrategy;
+use aarontong00\Zippy\FileStrategy\TarFileStrategy;
+use aarontong00\Zippy\FileStrategy\TarGzFileStrategy;
+use aarontong00\Zippy\FileStrategy\TB2FileStrategy;
+use aarontong00\Zippy\FileStrategy\TBz2FileStrategy;
+use aarontong00\Zippy\FileStrategy\TGzFileStrategy;
+use aarontong00\Zippy\FileStrategy\ZipFileStrategy;
 
 class Zippy
 {

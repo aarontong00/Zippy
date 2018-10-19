@@ -3,20 +3,20 @@
 /*
  * This file is part of Zippy.
  *
- * (c) Aarontong00 <info@Aarontong00.fr>
+ * (c) aarontong00 <info@aarontong00.fr>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Aarontong00\Zippy\Adapter;
+namespace aarontong00\Zippy\Adapter;
 
-use Aarontong00\Zippy\Adapter\Resource\ResourceInterface;
-use Aarontong00\Zippy\Archive\Archive;
-use Aarontong00\Zippy\Archive\Member;
-use Aarontong00\Zippy\Exception\RuntimeException;
-use Aarontong00\Zippy\Exception\InvalidArgumentException;
-use Aarontong00\Zippy\Resource\Resource as ZippyResource;
+use aarontong00\Zippy\Adapter\Resource\ResourceInterface;
+use aarontong00\Zippy\Archive\Archive;
+use aarontong00\Zippy\Archive\Member;
+use aarontong00\Zippy\Exception\RuntimeException;
+use aarontong00\Zippy\Exception\InvalidArgumentException;
+use aarontong00\Zippy\Resource\Resource as ZippyResource;
 use Symfony\Component\Process\Exception\ExceptionInterface as ProcessException;
 
 abstract class AbstractTarAdapter extends AbstractBinaryAdapter

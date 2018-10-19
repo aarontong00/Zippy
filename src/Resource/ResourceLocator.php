@@ -1,8 +1,8 @@
 <?php
 
-namespace Aarontong00\Zippy\Resource;
+namespace aarontong00\Zippy\Resource;
 
-use Aarontong00\Zippy\Resource\Resource AS ZippyResource;
+use aarontong00\Zippy\Resource\Resource AS ZippyResource;
 
 class ResourceLocator
 {

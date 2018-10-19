@@ -1,10 +1,10 @@
 <?php
 
-namespace Aarontong00\Zippy\Tests\Adapter\GNUTar;
+namespace aarontong00\Zippy\Tests\Adapter\GNUTar;
 
-use Aarontong00\Zippy\Adapter\GNUTar\TarGNUTarAdapter;
-use Aarontong00\Zippy\Tests\Adapter\AdapterTestCase;
-use Aarontong00\Zippy\Parser\ParserFactory;
+use aarontong00\Zippy\Adapter\GNUTar\TarGNUTarAdapter;
+use aarontong00\Zippy\Tests\Adapter\AdapterTestCase;
+use aarontong00\Zippy\Parser\ParserFactory;
 
 class TarGNUTarAdapterTest extends AdapterTestCase
 {
@@ -38,7 +38,7 @@ class TarGNUTarAdapterTest extends AdapterTestCase
 
     private function provideAdapter()
     {
-        $inflator = $this->getMockBuilder('\Aarontong00\Zippy\ProcessBuilder\ProcessBuilderFactory')
+        $inflator = $this->getMockBuilder('\aarontong00\Zippy\ProcessBuilder\ProcessBuilderFactory')
                 ->disableOriginalConstructor()
                 ->setMethods(array('useBinary'))
                 ->getMock();
@@ -156,7 +156,7 @@ class TarGNUTarAdapterTest extends AdapterTestCase
     public function testOpen()
     {
         $archive = $this->adapter->open($this->getResource(self::$tarFile));
-        $this->assertInstanceOf('Aarontong00\Zippy\Archive\ArchiveInterface', $archive);
+        $this->assertInstanceOf('aarontong00\Zippy\Archive\ArchiveInterface', $archive);
 
         return $archive;
     }
@@ -378,7 +378,7 @@ class TarGNUTarAdapterTest extends AdapterTestCase
             ->method('getProcess')
             ->will($this->returnValue($this->getSuccessFullMockProcess()));
 
-        $archiveFileMock = $this->getMockBuilder('\Aarontong00\Zippy\Archive\MemberInterface')->getMock();
+        $archiveFileMock = $this->getMockBuilder('\aarontong00\Zippy\Archive\MemberInterface')->getMock();
 
         $archiveFileMock
             ->expects($this->any())

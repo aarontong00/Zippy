@@ -1,12 +1,12 @@
 <?php
 
-namespace Aarontong00\Zippy\Tests\Adapter\VersionProbe;
+namespace aarontong00\Zippy\Tests\Adapter\VersionProbe;
 
 class GNUTarVersionProbeTest extends AbstractTarVersionProbeTest
 {
     public function getProbeClassName()
     {
-        return 'Aarontong00\Zippy\Adapter\VersionProbe\GNUTarVersionProbe';
+        return 'aarontong00\Zippy\Adapter\VersionProbe\GNUTarVersionProbe';
     }
 
     public function getCorrespondingVersionOutput()

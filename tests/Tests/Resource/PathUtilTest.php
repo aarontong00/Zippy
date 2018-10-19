@@ -1,9 +1,9 @@
 <?php
 
-namespace Aarontong00\Zippy\Tests\Resource;
+namespace aarontong00\Zippy\Tests\Resource;
 
-use Aarontong00\Zippy\Tests\TestCase;
-use Aarontong00\Zippy\Resource\PathUtil;
+use aarontong00\Zippy\Tests\TestCase;
+use aarontong00\Zippy\Resource\PathUtil;
 
 class PathUtilTest extends TestCase
 {

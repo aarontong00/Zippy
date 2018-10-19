@@ -1,8 +1,8 @@
 <?php
 
-namespace Aarontong00\Zippy\Tests\FileStrategy;
+namespace aarontong00\Zippy\Tests\FileStrategy;
 
-use Aarontong00\Zippy\FileStrategy\TarFileStrategy;
+use aarontong00\Zippy\FileStrategy\TarFileStrategy;
 
 class TarFileStrategyTest extends FileStrategyTestCase
 {

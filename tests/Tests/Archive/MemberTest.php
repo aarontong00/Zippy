@@ -1,10 +1,10 @@
 <?php
 
-namespace Aarontong00\Zippy\Tests\Archive;
+namespace aarontong00\Zippy\Tests\Archive;
 
-use Aarontong00\Zippy\Tests\TestCase;
-use Aarontong00\Zippy\Archive\Member;
-use Aarontong00\Zippy\Archive\MemberInterface;
+use aarontong00\Zippy\Tests\TestCase;
+use aarontong00\Zippy\Archive\Member;
+use aarontong00\Zippy\Archive\MemberInterface;
 
 class MemberTest extends TestCase
 {
@@ -12,7 +12,7 @@ class MemberTest extends TestCase
     {
         $member = new Member(
             $this->getResource('archive/located/here'),
-             $this->getMockBuilder('\Aarontong00\Zippy\Adapter\AdapterInterface')->getMock(),
+             $this->getMockBuilder('\aarontong00\Zippy\Adapter\AdapterInterface')->getMock(),
             'location',
             1233456,
             new \DateTime("2012-07-08 11:14:15"),
@@ -66,7 +66,7 @@ class MemberTest extends TestCase
 
     public function testExtract()
     {
-        $mockAdapter =  $this->getMockBuilder('\Aarontong00\Zippy\Adapter\AdapterInterface')->getMock();
+        $mockAdapter =  $this->getMockBuilder('\aarontong00\Zippy\Adapter\AdapterInterface')->getMock();
 
         $mockAdapter
             ->expects($this->any())
@@ -90,7 +90,7 @@ class MemberTest extends TestCase
 
     public function testRelativeExtract()
     {
-        $mockAdapter =  $this->getMockBuilder('\Aarontong00\Zippy\Adapter\AdapterInterface')->getMock();
+        $mockAdapter =  $this->getMockBuilder('\aarontong00\Zippy\Adapter\AdapterInterface')->getMock();
 
         $mockAdapter
             ->expects($this->any())

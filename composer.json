@@ -1,5 +1,5 @@
 {
-    "name": "Aarontong00/zippy",
+    "name": "aarontong00/zippy",
     "type": "library",
     "description": "Zippy, the archive manager companion just for  php 5.6 fork",
     "keywords": ["zip", "tar", "bzip", "compression"],
@@ -31,13 +31,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Aarontong00\\Zippy\\": "src/"
+            "aarontong00\\Zippy\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Aarontong00\\Zippy\\Functional\\": "tests/Functional/",
-            "Aarontong00\\Zippy\\Tests\\": "tests/Tests/"
+            "aarontong00\\Zippy\\Functional\\": "tests/Functional/",
+            "aarontong00\\Zippy\\Tests\\": "tests/Tests/"
         }
     },
     "extra": {

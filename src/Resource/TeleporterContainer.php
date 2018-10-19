@@ -3,23 +3,23 @@
 /*
  * This file is part of Zippy.
  *
- * (c) Aarontong00 <info@Aarontong00.fr>
+ * (c) aarontong00 <info@aarontong00.fr>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Aarontong00\Zippy\Resource;
+namespace aarontong00\Zippy\Resource;
 
-use Aarontong00\Zippy\Exception\InvalidArgumentException;
-use Aarontong00\Zippy\Resource\Reader\Guzzle\GuzzleReaderFactory;
-use Aarontong00\Zippy\Resource\Reader\Guzzle\LegacyGuzzleReaderFactory;
-use Aarontong00\Zippy\Resource\Resource as ZippyResource;
-use Aarontong00\Zippy\Resource\Teleporter\GenericTeleporter;
-use Aarontong00\Zippy\Resource\Teleporter\LocalTeleporter;
-use Aarontong00\Zippy\Resource\Teleporter\StreamTeleporter;
-use Aarontong00\Zippy\Resource\Teleporter\TeleporterInterface;
-use Aarontong00\Zippy\Resource\Writer\FilesystemWriter;
+use aarontong00\Zippy\Exception\InvalidArgumentException;
+use aarontong00\Zippy\Resource\Reader\Guzzle\GuzzleReaderFactory;
+use aarontong00\Zippy\Resource\Reader\Guzzle\LegacyGuzzleReaderFactory;
+use aarontong00\Zippy\Resource\Resource as ZippyResource;
+use aarontong00\Zippy\Resource\Teleporter\GenericTeleporter;
+use aarontong00\Zippy\Resource\Teleporter\LocalTeleporter;
+use aarontong00\Zippy\Resource\Teleporter\StreamTeleporter;
+use aarontong00\Zippy\Resource\Teleporter\TeleporterInterface;
+use aarontong00\Zippy\Resource\Writer\FilesystemWriter;
 use Symfony\Component\Filesystem\Filesystem;
 
 /**

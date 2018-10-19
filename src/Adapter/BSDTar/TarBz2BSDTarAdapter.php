@@ -1,9 +1,9 @@
 <?php
 
-namespace Aarontong00\Zippy\Adapter\BSDTar;
+namespace aarontong00\Zippy\Adapter\BSDTar;
 
-use Aarontong00\Zippy\Adapter\Resource\ResourceInterface;
-use Aarontong00\Zippy\Exception\NotSupportedException;
+use aarontong00\Zippy\Adapter\Resource\ResourceInterface;
+use aarontong00\Zippy\Exception\NotSupportedException;
 
 class TarBz2BSDTarAdapter extends TarBSDTarAdapter
 {
