@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Alchemy\Zippy;
+namespace Aarontong00\Zippy;
 
 use Alchemy\Zippy\Adapter\AdapterContainer;
 use Alchemy\Zippy\Adapter\AdapterInterface;
